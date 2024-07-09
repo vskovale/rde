@@ -1,0 +1,339 @@
+<!-- index.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Медиа Холдинг "Рекламный дайджест"
+{% endblock %}
+
+{% block content %}
+<section id="banner">
+    <img src="{% static 'images/banner.png' %}" alt="Баннер в стиле Василия Кандинского">
+    <div class="banner-text">
+        <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
+        <p>в стиле Василия Кандинского</p>
+    </div>
+</section>
+<section class="info-section">
+    <div class="info-grid">
+        <div class="info-item">
+            <h3>Рекламное агентство</h3>
+            <ul>
+                <li>Агентство полного цикла</li>
+                <li>Рекламные кампании</li>
+                <li>Полное сопровождение</li>
+                <li>Маркетинг</li>
+                <li>Ваш личный менеджер</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Полиграфический комплекс</h3>
+            <ul>
+                <li>Листовки</li>
+                <li>Газеты</li>
+                <li>Наклейки</li>
+                <li>Книги</li>
+                <li>Журналы</li>
+                <li>Визитки</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Наружная реклама</h3>
+            <ul>
+                <li>Билборды (6х3 м) – 385 сторон</li>
+                <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
+                <li>Суперсайты (15х5 м) – 9 сторон</li>
+                <li>Печать</li>
+                <li>Производство стендов</li>
+                <li>Вывески, указатели</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Журнал "Дорогое удовольствие" "МОСТ"</h3>
+            <ul>
+                <li>Статьи</li>
+                <li>Интервью</li>
+                <li>Поздравления</li>
+                <li>Новости</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Производство сувениров</h3>
+            <ul>
+                <li>Производство флагов</li>
+                <li>Любые нанесения на одежду (футболки, куртки)</li>
+                <li>Любые сувениры</li>
+                <li>Пледы, шторы, скатерти</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Информационный портал Tomsk.ru</h3>
+            <ul>
+                <li>Новости</li>
+                <li>Подкасты</li>
+                <li>Интервью</li>
+                <li>Домены в зоне tomsk.ru</li>
+                <li>Видео</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Радиохолдинг - 14 радиостанций</h3>
+            <ul>
+                <li>Продакшн-студия</li>
+                <li>Ролики</li>
+                <li>Интервью</li>
+                <li>Поздравления</li>
+                <li>Подкасты</li>
+                <li>Выездная студия</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Отдел дизайна</h3>
+            <ul>
+                <li>Полиграфия</li>
+                <li>Наружная реклама</li>
+                <li>Книги</li>
+                <li>Буклеты</li>
+                <li>Логотипы</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Диджитал-агентство</h3>
+            <ul>
+                <li>Аудит</li>
+                <li>Разработка сайтов, посадочных страниц</li>
+                <li>Настройка рекламы</li>
+                <li>Исследования ЦА</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Отдел прикладного искусства</h3>
+            <ul>
+                <li>Томская лошадка</li>
+                <li>Нестандартные изделия из дерева</li>
+                <li>Сувениры ручной работы</li>
+                <li>Поддоны и упаковка</li>
+                <li>Мастер-классы и обучение</li>
+            </ul>
+        </div>
+        <div class="info-item">
+            <h3>Школа продаж</h3>
+            <ul>
+                <li>Аудит и стратегия отдела продаж</li>
+                <li>Тренинги продаж (от холодных до розничных)</li>
+                <li>Аудит и стратегия отдела маркетинга</li>
+                <li>Корпоративная система обучения сотрудников</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="page">
+
+    <img src="{% static 'images/agency.png' %}" alt="Рекламное агентство" class="page-img">
+    <div class="page-text">
+        <h2>Рекламное агентство</h2>
+        <ul>
+            <li>Агентство полного цикла</li>
+            <li>Рекламные кампании</li>
+            <li>Полное сопровождение</li>
+            <li>Маркетинг</li>
+            <li>Ваш личный менеджер</li>
+        </ul>
+        <div class="page-about">
+            <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+            <img src="{% static 'logo/logo.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+<section class="page">
+    <img src="{% static 'images/printing%20department.png' %}" alt="Полиграфический комплекс" class="page-img">
+    <div class="page-text">
+        <h2>Полиграфический комплекс</h2>
+        <ul>
+            <li>Листовки</li>
+            <li>Газеты</li>
+            <li>Наклейки</li>
+            <li>Книги</li>
+            <li>Журналы</li>
+            <li>Визитки</li>
+        </ul>
+        <div class="page-about">
+            <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+            <img src="{% static 'logo/grandprint.png' %}" alt="Полиграфический комплекс" class="page-logo">
+        </div>
+    </div>
+</section>
+
+<section class="page">
+    <img src="{% static 'images/billboard.png' %}" alt="Наружная реклама" class="page-img">
+    <div class="page-text">
+        <h2>Наружная реклама</h2>
+        <ul>
+            <li>Билборды (6х3 м) – 385 сторон</li>
+            <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
+            <li>Суперсайты (15х5 м) – 9 сторон</li>
+            <li>Печать</li>
+            <li>Производство стендов</li>
+            <li>Вывески, указатели</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/street%20media.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+<section class="page">
+    <img src="{% static 'images/magazine.png' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="page-img">
+    <div class="page-text">
+        <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+        <ul>
+            <li>Статьи</li>
+            <li>Интервью</li>
+            <li>Поздравления</li>
+            <li>Новости</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/bridge.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/souvenir.png' %}" alt="Производство сувениров" class="page-img">
+    <div class="page-text">
+        <h2>Производство сувениров</h2>
+        <ul>
+            <li>Производство флагов</li>
+            <li>Любые нанесения на одежду (футболки, куртки)</li>
+            <li>Любые сувениры</li>
+            <li>Пледы, шторы, скатерти</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/first_com.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-img">
+    <div class="page-text">
+        <h2>Информационный портал Tomsk.ru</h2>
+        <ul>
+            <li>Новости</li>
+            <li>Подкасты</li>
+            <li>Интервью</li>
+            <li>Домены в зоне tomsk.ru</li>
+            <li>Видео</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/tomskru.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/radio.png' %}" alt="Радиохолдинг - 14 радиостанций" class="page-img">
+    <div class="page-text">
+        <h2>Радиохолдинг - 14 радиостанций</h2>
+        <ul>
+            <li>Продакшн-студия</li>
+            <li>Ролики</li>
+            <li>Интервью</li>
+            <li>Поздравления</li>
+            <li>Подкасты</li>
+            <li>Выездная студия</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/fm.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/design.png' %}" alt="Отдел дизайна" class="page-img">
+    <div class="page-text">
+        <h2>Отдел дизайна</h2>
+        <ul>
+            <li>Полиграфия</li>
+            <li>Наружная реклама</li>
+            <li>Книги</li>
+            <li>Буклеты</li>
+            <li>Логотипы</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/desing.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/digital.png' %}" alt="Рекламное агентство" class="page-img">
+    <div class="page-text">
+        <h2>Диджитал-агентство</h2>
+        <ul>
+            <li>Аудит</li>
+            <li>Разработка сайтов, посадочных страниц</li>
+            <li>Настройка рекламы</li>
+            <li>Исследования ЦА</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/agency.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/tomskru.png' %}" alt="Рекламное агентство" class="page-img">
+    <div class="page-text">
+        <h2>Отдел прикладного искусства</h2>
+        <ul>
+            <li>Томская лошадка</li>
+            <li>Нестандартные изделия из дерева</li>
+            <li>Сувениры ручной работы</li>
+            <li>Поддоны и упаковка</li>
+            <li>Мастер-классы и обучение</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/wooden%20horse.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+
+
+<section class="page">
+    <img src="{% static 'images/shcool.png' %}" alt="Рекламное агентство" class="page-img">
+    <div class="page-text">
+        <h2>Школа продаж</h2>
+        <ul>
+            <li>Аудит и стратегия отдела продаж</li>
+            <li>Тренинги продаж (от холодных до розничных)</li>
+            <li>Аудит и стратегия отдела маркетинга</li>
+            <li>Корпоративная система обучения сотрудников</li>
+        </ul>
+        <div class="page-about">
+        <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+        <img src="{% static 'logo/school.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+            </div>
+    </div>
+</section>
+{% endblock %}

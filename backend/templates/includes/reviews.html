@@ -1,0 +1,39 @@
+<!-- reviews.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+<div class="reviews-section">
+    <h2>Отзывы наших клиентов</h2>
+    <div class="reviews-slider">
+        <button class="prev">&#8249;</button>
+        <div class="review">
+            <p class="review-text">«Отзыв, написанный по результатам работы с одним из подразделений группы компаний Рекламный дайджест»</p>
+            <p class="review-author">Генеральный директор компании «Название компании»<br>Имя Фамилия</p>
+        </div>
+        <button class="next">&#8250;</button>
+    </div>
+    <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <button class="review-button">Оставить отзыв</button>
+</div>
+
+<script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

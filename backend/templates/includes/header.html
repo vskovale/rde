@@ -1,0 +1,92 @@
+<!-- header.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header__left">
+            <div class="header__logo">
+                <a href="/"><img src="{% static 'logo/logo.png' %}" alt="Дайджест Группа Компаний"></a>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="header__top">
+                <span class="header__address">Россия, г. Томск, ул. Герцена, 72 б</span>
+                <span class="header__phone">8 (3822) 52 10 01</span>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li class="dropdown"><a>О нас</a>
+                        <div class="dropdown-content">
+                            <a href="#">История</a>
+                            <a href="#">Преимущества</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Услуги</a></li>
+                    <li class="dropdown"><a>Партнерам</a>
+                        <div class="dropdown-content">
+                            <a href="#">Личный кабинет</a>
+                            <a href="#">Предложения</a>
+                        </div>
+                    </li>
+                    <li><a href="/gallery">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__cta">
+                <a href="#" class="cta-button">Заказать звонок</a>
+            </div>
+            <div class="header__time-wrapper">
+                <span>Сейчас в Томске</span>
+                <span id="current-time" class="header__time"></span>
+            </div>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Партнерам</a></li>
+        <li><a href="/gallery">Галерея</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</div>
+<script>
+    // Функция для обновления текущего времени
+    function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const currentTime = `${hours}:${minutes}`;
+        document.getElementById('current-time').textContent = currentTime;
+    }
+
+    // Обновляем время каждую секунду
+    setInterval(updateTime, 1000);
+
+    // Устанавливаем начальное время
+    updateTime();
+
+    // Адаптивное меню
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+
+</script>
+{% block content %}{% endblock %}
+</body>
+</html>
