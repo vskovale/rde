@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5458dd3-37af-4073-87c3-7c89e2a9c36b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/includes/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/includes/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/includes/reviews.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rde.iml" afterDir="false" />
-    </list>
+    <list default="true" id="b5458dd3-37af-4073-87c3-7c89e2a9c36b" name="Changes" comment="test build" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +114,20 @@
       <option name="presentableId" value="Default" />
       <updated>1720404826668</updated>
     </task>
+    <task id="LOCAL-00001" summary="test build">
+      <option name="closed" value="true" />
+      <created>1720510816752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720510816753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test build" />
+    <option name="LAST_COMMIT_MESSAGE" value="test build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
