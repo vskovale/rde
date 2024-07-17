@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Медиа Холдинг "Рекламный дайджест"
+{% endblock %}
+
+{% block content %}
+<button id="scrollToTop" class="scroll-button">⬆️</button>
+<button id="scrollToBottom" class="scroll-button">⬇️</button>
+
+{% for slider in sliders %}
+<section id="{{ slider.title|slugify }}">
+    <div class="slider-wrapper">
+        {% for slide in slider.slides.all %}
+        <div class="slide">
+            <img src="{{ slide.image.url }}" alt="{{ slide.title }}">
+            <div class="banner-text">
+                <h2>{{ slide.title }}</h2>
+                <p>{{ slide.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="dots-container" id="{{ slider.title|slugify }}-dots">
+        {% for slide in slider.slides.all %}
+        <span class="dot" onclick="{{ slider.title|slugify }}Slider.currentSlide({{ forloop.counter0 }})"></span>
+        {% endfor %}
+    </div>
+    <button class="prev" onclick="{{ slider.title|slugify }}Slider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="{{ slider.title|slugify }}Slider.changeSlide(1)">&#10095;</button>
+</section>
+{% endfor %}
+
+<section class="form-section">
+    <div class="form-container">
+        <h2>Задайте свой вопрос!</h2>
+        <p>Для получения ответа заполните, пожалуйста, форму обратной связи</p>
+        <form action="#">
+            <input type="text" placeholder="Имя" required>
+            <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
+            <textarea placeholder="Вопрос" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
+    </div>
+</section>
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="form-container">
+            <h2>Задайте свой вопрос!</h2>
+            <p>Для получения ответа заполните, пожалуйста, форму обратной связи</p>
+            <form action="#">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
+                <textarea placeholder="Вопрос" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
+        </div>
+    </div>
+</div>
+<script>
+    function Slider(sliderId, dotsContainerId) {
+        this.currentSlideIndex = 0;
+        this.sliderWrapper = document.querySelector(`#${sliderId} .slider-wrapper`);
+        this.slides = document.querySelectorAll(`#${sliderId} .slide`);
+        this.dots = document.querySelectorAll(`#${dotsContainerId} .dot`);
+
+        this.changeSlide = (direction) => {
+            this.currentSlideIndex += direction;
+
+            if (this.currentSlideIndex >= this.slides.length) {
+                this.currentSlideIndex = 0;
+            } else if (this.currentSlideIndex < 0) {
+                this.currentSlideIndex = this.slides.length - 1;
+            }
+
+            this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+            this.updateDots();
+        };
+
+        this.currentSlide = (n) => {
+            this.currentSlideIndex = n;
+            this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+            this.updateDots();
+        };
+
+        this.updateDots = () => {
+            this.dots.forEach(dot => dot.classList.remove('active'));
+            this.dots[this.currentSlideIndex].classList.add('active');
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            this.dots[this.currentSlideIndex].classList.add('active');
+        });
+    }
+
+    {% for slider in sliders %}
+    const {{ slider.title|slugify }}Slider = new Slider('{{ slider.title|slugify }}', '{{ slider.title|slugify }}-dots');
+    {% endfor %}
+
+    function openModal() {
+        document.getElementById('contactModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('contactModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('contactModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+<script src="{% static 'scroll.js' %}"></script>
+{% endblock %}

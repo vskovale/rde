@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.conf import settings
 import os
 
+from backend.models import Slider
+
 
 def get_images(request):
     image_folder = os.path.join(settings.BASE_DIR, 'backend/static/images')
@@ -11,4 +13,5 @@ def get_images(request):
 
 
 def index(request):
+    sliders = Slider.objects.all()
     return render(request, "index.html")
