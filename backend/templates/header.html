@@ -1,0 +1,140 @@
+<!-- header.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=ваш API-ключ&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+        myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map ("map", {
+                center: [56.474097, 84.987237],
+                zoom: 19
+            });
+
+            myPlacemark = new ymaps.Placemark([56.474097, 84.987237], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header__left">
+            <div class="header__logo">
+                <a href="/"><img src="{% static 'logo/logo.png' %}" alt="Дайджест Группа Компаний"></a>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="header__top">
+                <span class="header__address">Россия, г. Томск, ул. Герцена, 72 б</span>
+                <span class="header__phone">8 (3822) 52 10 01</span>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Рекламные услуги</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('printing')">Полиграфический комплекс</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал-агентство</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Медиа и публикации</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('magazine')">Глянцевые журналы</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('tomskru')">Информационный портал</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('radio')">Радиохолдинг</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Дизайн и производство</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Производство сувениров</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('art')">Прикладное искусство</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="scrollToSection('shcool')">Школа продаж</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__cta">
+                <button class="cta-button" onclick="openModal()">Заказать звонок</button>
+            </div>
+            <div class="header__time-wrapper">
+                <span>Сейчас в Томске</span>
+                <span id="current-time" class="header__time"></span>
+            </div>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('printing')">Полиграфический комплекс</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('magazine')">Глянцевые журналы</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Производство сувениров</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('tomskru')">Информационный портал</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('radio')">Радиохолдинг</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал-агентство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('art')">Прикладное искусство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('shcool')">Школа продаж</a></li>
+    </ul>
+</div>
+<script>
+    // Функция для обновления текущего времени
+    function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const currentTime = `${hours}:${minutes}`;
+        document.getElementById('current-time').textContent = currentTime;
+    }
+
+    // Обновляем время каждую секунду
+    setInterval(updateTime, 1000);
+
+    // Устанавливаем начальное время
+    updateTime();
+
+    // Адаптивное меню
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+    function scrollToSection(id) {
+        var element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+        const menu = document.getElementById('mobileMenu');
+        if (menu.classList.contains('active')) {
+            menu.classList.toggle('active');
+        }
+    }
+
+</script>
+{% block content %}{% endblock %}
+</body>
+</html>

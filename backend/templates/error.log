@@ -1,0 +1,653 @@
+[Tue Jul 16 04:11:08.520894 2024] [mpm_prefork:notice] [pid 9833] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 04:11:08.521093 2024] [core:notice] [pid 9833] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 04:11:17.314273 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56280] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:17.316444 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56280] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:42.134505 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56294] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:42.136186 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56294] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:47.038309 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56298] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:47.039463 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56298] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:47.627749 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56302] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:47.628901 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56302] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:48.022209 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56304] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:48.023109 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56304] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:48.419425 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56316] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:48.420301 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56316] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:48.827219 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56330] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:48.828739 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56330] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:49.165028 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56338] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:49.166701 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56338] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:49.874694 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56348] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:49.876361 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56348] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:50.323712 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56358] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:50.325104 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56358] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:50.666774 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56372] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:50.668484 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56372] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:50.995143 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56376] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:50.996554 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56376] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:51.306714 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56388] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:51.307811 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56388] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:51.635261 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56404] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:51.636518 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56404] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:53.094186 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56416] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:53.095588 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56416] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:53.594435 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56426] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:53.596106 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56426] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:53.884001 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56428] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:53.886046 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56428] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:54.148219 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56436] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:54.148739 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56436] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:54.410355 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56442] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:54.411418 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56442] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:54.667280 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56452] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:54.667947 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56452] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:54.923361 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56458] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:54.924839 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56458] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:55.210655 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56464] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:55.212215 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56464] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:55.490479 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56468] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:55.492099 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56468] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:55.750167 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56480] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:55.751323 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56480] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:55.986091 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56484] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:55.987792 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56484] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:56.242623 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56498] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:56.244239 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56498] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:56.514859 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56510] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:56.516316 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56510] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:56.745775 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56514] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:56.747395 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56514] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:56.994121 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56526] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:56.995365 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56526] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:57.242622 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56536] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:57.244190 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56536] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:57.507088 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56540] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:57.508525 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56540] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:57.763219 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56554] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:57.764823 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56554] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:58.035138 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56556] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:58.036556 2024] [cgi:error] [pid 9835] [client 192.168.122.254:56556] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:58.290042 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56570] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:58.392842 2024] [cgi:error] [pid 9839] [client 192.168.122.254:56570] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:58.554936 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56576] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:58.556357 2024] [cgi:error] [pid 9837] [client 192.168.122.254:56576] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:58.813103 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56584] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:58.814623 2024] [cgi:error] [pid 9836] [client 192.168.122.254:56584] End of script output before headers: wsgi.py
+[Tue Jul 16 04:11:59.042485 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56588] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:11:59.044034 2024] [cgi:error] [pid 9838] [client 192.168.122.254:56588] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:23.115720 2024] [mpm_prefork:notice] [pid 9833] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 04:14:23.287737 2024] [mpm_prefork:notice] [pid 9940] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 04:14:23.288097 2024] [core:notice] [pid 9940] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 04:14:26.166768 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56596] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:26.167761 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56596] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:27.345987 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56612] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:27.347436 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56612] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:27.904279 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56616] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:28.123462 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56616] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:28.272004 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56624] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:28.273701 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56624] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:28.584254 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56630] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:28.585753 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56630] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:29.072403 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56638] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:29.074102 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56638] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:29.344813 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56650] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:29.346093 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56650] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:29.673612 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56658] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:29.674467 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56658] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:29.983605 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56666] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:29.984791 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56666] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:30.272080 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56670] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:30.272938 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56670] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:30.562468 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56672] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:30.563881 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56672] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:30.865481 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56674] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:30.866627 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56674] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:31.168250 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56690] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:31.169411 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56690] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:31.434027 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56696] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:31.435101 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56696] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:31.681816 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56710] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:31.682923 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56710] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:31.914042 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56726] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:31.915053 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56726] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:32.168122 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56742] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:32.169153 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56742] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:32.435277 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56752] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:32.436484 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56752] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:32.696549 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56758] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:32.697580 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56758] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:32.967399 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56760] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:32.968247 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56760] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:33.231918 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56776] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:33.232486 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56776] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:33.481060 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56784] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:33.482319 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56784] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:34.143571 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56796] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:34.145064 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56796] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:34.632170 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56804] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:34.633739 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56804] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:35.144009 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56812] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:35.144635 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56812] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:35.599309 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56822] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:35.600759 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56822] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:35.911264 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56832] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:35.912969 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56832] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:36.184271 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56836] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:36.185745 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56836] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:36.448482 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56842] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:36.450060 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56842] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:36.712110 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56844] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:36.713997 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56844] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:36.976449 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56860] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:36.977879 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56860] End of script output before headers: wsgi.py
+[Tue Jul 16 04:14:37.215188 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56876] AH01215: (13)Permission denied: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:14:37.215674 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56876] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:23.799786 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56886] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:23.801149 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56886] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:24.319298 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56892] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:24.319843 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56892] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:24.575557 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56900] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:24.576951 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56900] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:24.879168 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56906] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:24.880217 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56906] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:32.185879 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56908] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:32.187359 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56908] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:32.951666 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56924] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:32.953104 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56924] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:33.254885 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56936] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:33.256274 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56936] End of script output before headers: wsgi.py
+[Tue Jul 16 04:15:33.478646 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56946] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:15:33.479888 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56946] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:28.354620 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56956] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:28.355778 2024] [cgi:error] [pid 9943] [client 192.168.122.254:56956] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:28.914847 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56958] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:28.915855 2024] [cgi:error] [pid 9942] [client 192.168.122.254:56958] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:29.530861 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56974] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:29.531618 2024] [cgi:error] [pid 9944] [client 192.168.122.254:56974] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:29.950303 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56988] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:29.951758 2024] [cgi:error] [pid 9945] [client 192.168.122.254:56988] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:30.322951 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56994] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:30.324090 2024] [cgi:error] [pid 9946] [client 192.168.122.254:56994] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:30.651899 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57004] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:30.652889 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57004] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:31.014827 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57014] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:31.015578 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57014] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:53.068015 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57016] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:53.069511 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57016] End of script output before headers: wsgi.py
+[Tue Jul 16 04:18:55.707464 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57032] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:18:55.708443 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57032] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:47.847395 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57042] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:47.848507 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57042] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:48.839048 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57050] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:48.840348 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57050] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:49.871626 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57062] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:49.873105 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57062] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:50.904622 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57076] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:50.906435 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57076] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:51.614562 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57080] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:51.615815 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57080] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:52.148216 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57088] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:52.149055 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57088] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:52.701649 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57096] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:52.702922 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57096] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:53.236947 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57100] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:53.238102 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57100] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:53.900946 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57116] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:53.902399 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57116] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:54.458831 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57126] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:54.459686 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57126] End of script output before headers: wsgi.py
+[Tue Jul 16 04:28:54.901014 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57136] AH01215: (8)Exec format error: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:28:54.902702 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57136] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:17.034600 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57148] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:17.036007 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57148] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:18.577841 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57152] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:18.578733 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57152] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:19.339451 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57162] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:19.340811 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57162] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:19.850456 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57170] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:19.851856 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57170] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:20.393456 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57184] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:20.394956 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57184] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:20.897015 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57200] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:20.898084 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57200] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:21.452277 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57206] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:21.452780 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57206] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:22.009766 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57218] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:22.010867 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57218] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:22.586016 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57222] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:22.587049 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57222] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:23.154179 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57236] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:23.155758 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57236] End of script output before headers: wsgi.py
+[Tue Jul 16 04:30:23.658432 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57250] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:30:23.659948 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57250] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:34.530193 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57258] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:34.530895 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57258] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:35.999653 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57262] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:36.000252 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57262] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:36.374167 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57268] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:36.374695 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57268] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:36.786169 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57270] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:36.787286 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57270] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:37.316970 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57286] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:37.318065 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57286] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:37.744658 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57292] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:37.746101 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57292] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:38.153397 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57294] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:38.154480 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57294] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:38.551302 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57308] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:38.551883 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57308] End of script output before headers: wsgi.py
+[Tue Jul 16 04:31:38.954159 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57322] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:31:38.955186 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57322] End of script output before headers: wsgi.py
+[Tue Jul 16 04:36:18.465096 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57330] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:36:18.465305 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57330] End of script output before headers: wsgi.py
+[Tue Jul 16 04:36:18.670944 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57332] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:36:18.671042 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57332] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:38:47.656603 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57340] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:38:47.656777 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57340] End of script output before headers: wsgi.py
+[Tue Jul 16 04:38:47.851943 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57346] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:38:47.852032 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57346] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:38:54.030439 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57356] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:38:54.030554 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57356] End of script output before headers: wsgi.py
+[Tue Jul 16 04:38:54.824269 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57368] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:38:54.824373 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57368] End of script output before headers: wsgi.py
+[Tue Jul 16 04:38:55.602157 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57380] AH01215: /usr/bin/env: 'python\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:38:55.602278 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57380] End of script output before headers: wsgi.py
+[Tue Jul 16 04:39:06.885664 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57382] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:39:06.887210 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57382] End of script output before headers: wsgi.py
+[Tue Jul 16 04:39:08.104307 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57390] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:39:08.106004 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57390] End of script output before headers: wsgi.py
+[Tue Jul 16 04:39:09.429766 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57394] AH01215: (2)No such file or directory: exec of '/var/www/rde/rde/wsgi.py' failed: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:39:09.431417 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57394] End of script output before headers: wsgi.py
+[Tue Jul 16 04:41:11.275460 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57408] AH01215: /usr/bin/env: 'python -w\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:11.275591 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57408] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:11.275613 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57408] End of script output before headers: wsgi.py
+[Tue Jul 16 04:41:11.485473 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57414] AH01215: /usr/bin/env: 'python -w\\r': No such file or directory: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:11.485619 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57414] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:11.485641 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57414] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:24.112547 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57420] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:24.112669 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57420] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:24.112713 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57420] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:24.112839 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57420] End of script output before headers: wsgi.py
+[Tue Jul 16 04:41:24.285905 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57422] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:24.286018 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57422] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:24.286059 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57422] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:24.286083 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57422] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:25.598485 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57438] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:25.598645 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57438] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:25.598684 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57438] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:41:25.598715 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57438] End of script output before headers: wsgi.py
+[Tue Jul 16 04:41:25.784466 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57444] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:25.784591 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57444] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:25.784675 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57444] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:41:25.784696 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57444] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:51:32.196401 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57452] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:32.196689 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57452] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:32.196737 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57452] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:32.196763 2024] [cgi:error] [pid 10107] [client 192.168.122.254:57452] End of script output before headers: wsgi.py
+[Tue Jul 16 04:51:32.411614 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57456] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:51:32.411775 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57456] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:51:32.411815 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57456] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:51:32.411842 2024] [cgi:error] [pid 9944] [client 192.168.122.254:57456] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 04:51:33.673453 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57460] AH01215: Unknown option: -w: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:33.673614 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57460] AH01215: usage: /usr/bin/python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:33.673653 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57460] AH01215: Try `python -h' for more information.: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:51:33.673677 2024] [cgi:error] [pid 9945] [client 192.168.122.254:57460] End of script output before headers: wsgi.py
+[Tue Jul 16 04:52:22.239593 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57468] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:52:22.239795 2024] [cgi:error] [pid 9946] [client 192.168.122.254:57468] End of script output before headers: wsgi.py
+[Tue Jul 16 04:52:23.068393 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57484] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:52:23.068509 2024] [cgi:error] [pid 9943] [client 192.168.122.254:57484] End of script output before headers: wsgi.py
+[Tue Jul 16 04:55:00.418592 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57498] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:55:00.418721 2024] [cgi:error] [pid 9942] [client 192.168.122.254:57498] End of script output before headers: wsgi.py
+[Tue Jul 16 04:58:06.659056 2024] [mpm_prefork:notice] [pid 9940] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 04:58:06.819080 2024] [mpm_prefork:notice] [pid 11493] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 04:58:06.819196 2024] [core:notice] [pid 11493] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 04:58:11.882505 2024] [cgi:error] [pid 11496] [client 192.168.122.254:57504] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:58:12.000693 2024] [cgi:error] [pid 11496] [client 192.168.122.254:57504] End of script output before headers: wsgi.py
+[Tue Jul 16 04:58:12.191324 2024] [cgi:error] [pid 11497] [client 192.168.122.254:57512] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:58:12.192027 2024] [cgi:error] [pid 11497] [client 192.168.122.254:57512] End of script output before headers: wsgi.py
+[Tue Jul 16 04:58:12.396792 2024] [cgi:error] [pid 11495] [client 192.168.122.254:57522] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:58:12.396871 2024] [cgi:error] [pid 11495] [client 192.168.122.254:57522] End of script output before headers: wsgi.py
+[Tue Jul 16 04:58:12.615459 2024] [cgi:error] [pid 11498] [client 192.168.122.254:57528] AH01215: /usr/bin/env: 'python3\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:58:12.615572 2024] [cgi:error] [pid 11498] [client 192.168.122.254:57528] End of script output before headers: wsgi.py
+[Tue Jul 16 04:59:01.745487 2024] [cgi:error] [pid 11499] [client 192.168.122.254:57534] AH01215: /usr/bin/env: 'python3 -w\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:01.745610 2024] [cgi:error] [pid 11499] [client 192.168.122.254:57534] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:01.745638 2024] [cgi:error] [pid 11499] [client 192.168.122.254:57534] End of script output before headers: wsgi.py
+[Tue Jul 16 04:59:03.268529 2024] [cgi:error] [pid 11496] [client 192.168.122.254:57536] AH01215: /usr/bin/env: 'python3 -w\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:03.268635 2024] [cgi:error] [pid 11496] [client 192.168.122.254:57536] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:03.268656 2024] [cgi:error] [pid 11496] [client 192.168.122.254:57536] End of script output before headers: wsgi.py
+[Tue Jul 16 04:59:06.528511 2024] [mpm_prefork:notice] [pid 11493] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 04:59:06.676238 2024] [mpm_prefork:notice] [pid 11624] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 04:59:06.676363 2024] [core:notice] [pid 11624] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 04:59:07.489219 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57542] AH01215: /usr/bin/env: 'python3 -w\\r': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:07.489343 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57542] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 04:59:07.489374 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57542] End of script output before headers: wsgi.py
+[Tue Jul 16 05:00:16.406462 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57550] AH01215: /usr/bin/env: 'python3 -w': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:16.406635 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57550] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:16.406688 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57550] End of script output before headers: wsgi.py
+[Tue Jul 16 05:00:19.204649 2024] [cgi:error] [pid 11629] [client 192.168.122.254:57560] AH01215: /usr/bin/env: 'python3 -w': No such file or directory: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:19.204994 2024] [cgi:error] [pid 11629] [client 192.168.122.254:57560] AH01215: /usr/bin/env: use -[v]S to pass options in shebang lines: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:19.205024 2024] [cgi:error] [pid 11629] [client 192.168.122.254:57560] End of script output before headers: wsgi.py
+[Tue Jul 16 05:00:44.264730 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265007 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265047 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265196 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265229 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265294 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265333 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265403 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265440 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265506 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265538 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265601 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265659 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265714 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265770 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265832 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.265879 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:00:44.395906 2024] [cgi:error] [pid 11630] [client 192.168.122.254:57566] End of script output before headers: wsgi.py
+[Tue Jul 16 05:03:30.823964 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824315 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824371 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824471 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824514 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824612 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824654 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824789 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824829 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824899 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.824932 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825000 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825082 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825141 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825200 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825266 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.825314 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:30.948496 2024] [cgi:error] [pid 11628] [client 192.168.122.254:57568] End of script output before headers: wsgi.py
+[Tue Jul 16 05:03:31.878518 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878662 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878701 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878778 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878812 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878877 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878917 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.878988 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879026 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879094 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879127 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879193 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879292 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879349 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879408 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879473 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:31.879519 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:32.001619 2024] [cgi:error] [pid 11627] [client 192.168.122.254:57574] End of script output before headers: wsgi.py
+[Tue Jul 16 05:03:52.019291 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019530 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019568 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019644 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019677 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019742 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019780 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019848 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019885 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019951 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.019983 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020047 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020100 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020226 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020286 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020349 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.020439 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:03:52.141247 2024] [cgi:error] [pid 11626] [client 192.168.122.254:57590] End of script output before headers: wsgi.py
+[Tue Jul 16 05:04:10.730478 2024] [mpm_prefork:notice] [pid 11624] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 05:04:10.882254 2024] [mpm_prefork:notice] [pid 11900] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 05:04:10.882376 2024] [core:notice] [pid 11900] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 05:04:12.505716 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.505860 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.505899 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.505976 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506010 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506074 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506114 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506219 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506270 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506348 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506381 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506446 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506501 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506557 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506615 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506678 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.506724 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:04:12.621406 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57600] End of script output before headers: wsgi.py
+[Tue Jul 16 05:07:19.623567 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.625803 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.625867 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.625976 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626012 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626081 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626123 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626197 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626236 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626307 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626340 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626410 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626468 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626526 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626586 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626653 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.626702 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:07:19.768330 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57606] End of script output before headers: wsgi.py
+[Tue Jul 16 05:20:12.594690 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.594912 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.594951 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595028 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595090 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595155 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595288 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595360 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595456 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595525 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595566 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595638 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595703 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595784 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595862 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595932 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.595988 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:12.713817 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57616] End of script output before headers: wsgi.py
+[Tue Jul 16 05:20:43.221108 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221348 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221389 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221472 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221519 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221586 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221627 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221700 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221739 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221809 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221864 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221930 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.221985 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.222041 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.222099 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.222163 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.222208 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:20:43.339061 2024] [cgi:error] [pid 11904] [client 192.168.149.158:60486] End of script output before headers: wsgi.py
+[Tue Jul 16 05:24:21.811781 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812065 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812106 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812237 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812274 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812342 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812382 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812456 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812495 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812564 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812598 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812665 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812721 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812779 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812901 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.812966 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.813012 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 05:24:21.927899 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57622] End of script output before headers: wsgi.py
+[Tue Jul 16 07:40:12.138359 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138688 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138735 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138823 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138863 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138937 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.138982 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139070 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139113 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139190 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139228 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139301 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139367 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139434 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139535 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139620 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.139676 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:12.262265 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57636] End of script output before headers: wsgi.py
+[Tue Jul 16 07:40:25.824938 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215: Traceback (most recent call last):: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825323 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/var/www/rde/rde/wsgi.py", line 11, in <module>: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825362 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     application = get_wsgi_application(): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825440 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/usr/lib/python3/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825473 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     django.setup(set_prefix=False): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825537 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/usr/lib/python3/dist-packages/django/__init__.py", line 24, in setup: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825578 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     apps.populate(settings.INSTALLED_APPS): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825663 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/registry.py", line 91, in populate: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825703 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     app_config = AppConfig.create(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825770 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/usr/lib/python3/dist-packages/django/apps/config.py", line 90, in create: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825802 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     module = import_module(entry): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825868 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825922 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:     return _bootstrap._gcd_import(name[level:], package, level): /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.825979 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.826037 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.826103 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked: /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.826149 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] AH01215: ModuleNotFoundError: No module named 'compressor': /var/www/rde/rde/wsgi.py
+[Tue Jul 16 07:40:25.948083 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57642] End of script output before headers: wsgi.py
+[Tue Jul 16 07:45:46.781845 2024] [cgi:error] [pid 11903] [client 192.168.151.101:32974] End of script output before headers: wsgi.py
+[Tue Jul 16 07:46:55.572196 2024] [cgi:error] [pid 11904] [client 192.168.151.101:34778] End of script output before headers: wsgi.py
+[Tue Jul 16 07:47:24.847828 2024] [cgi:error] [pid 11906] [client 192.168.122.254:57654] End of script output before headers: wsgi.py
+[Tue Jul 16 07:47:27.801512 2024] [cgi:error] [pid 11908] [client 192.168.151.101:35508] End of script output before headers: wsgi.py
+[Tue Jul 16 07:47:31.080718 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57670] End of script output before headers: wsgi.py
+[Tue Jul 16 07:49:06.909283 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57680] End of script output before headers: wsgi.py
+[Tue Jul 16 07:49:10.362466 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57682] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:38.695589 2024] [cgi:error] [pid 11906] [client 192.168.122.254:57686] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:42.604912 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57690] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:45.347866 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57698] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:48.799512 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57708] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:51.680629 2024] [cgi:error] [pid 11903] [client 192.168.122.254:57718] End of script output before headers: wsgi.py
+[Tue Jul 16 07:51:54.422761 2024] [cgi:error] [pid 11904] [client 192.168.122.254:57728] End of script output before headers: wsgi.py
+[Tue Jul 16 07:52:25.191340 2024] [cgi:error] [pid 11906] [client 192.168.122.254:57732] End of script output before headers: wsgi.py
+[Tue Jul 16 07:52:28.504025 2024] [cgi:error] [pid 11908] [client 192.168.122.254:57744] End of script output before headers: wsgi.py
+[Tue Jul 16 07:52:40.383988 2024] [cgi:error] [pid 11902] [client 192.168.122.254:57760] End of script output before headers: wsgi.py
+[Tue Jul 16 07:52:45.155718 2024] [cgi:error] [pid 11905] [client 192.168.122.254:57770] End of script output before headers: wsgi.py
+[Tue Jul 16 08:00:19.475433 2024] [mpm_prefork:notice] [pid 11900] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:00:19.647105 2024] [mpm_prefork:notice] [pid 13370] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:00:19.647280 2024] [core:notice] [pid 13370] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:00:35.297245 2024] [cgi:error] [pid 13372] [client 192.168.149.158:59485] End of script output before headers: wsgi.py
+[Tue Jul 16 08:00:41.087832 2024] [cgi:error] [pid 13373] [client 192.168.122.254:57780] End of script output before headers: wsgi.py
+[Tue Jul 16 08:00:41.899904 2024] [cgi:error] [pid 13374] [client 192.168.122.254:57794] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:01:41.458746 2024] [cgi:error] [pid 13376] [client 192.168.122.254:57804] End of script output before headers: wsgi.py
+[Tue Jul 16 08:01:42.241739 2024] [cgi:error] [pid 13378] [client 192.168.122.254:57812] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:07:03.760881 2024] [cgi:error] [pid 13372] [client 192.168.122.254:57828] End of script output before headers: wsgi.py
+[Tue Jul 16 08:07:04.565721 2024] [cgi:error] [pid 13373] [client 192.168.122.254:57840] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:07:46.567183 2024] [cgi:error] [pid 13374] [client 192.168.149.158:60008] End of script output before headers: wsgi.py
+[Tue Jul 16 08:22:11.749909 2024] [cgi:error] [pid 13375] [client 192.168.122.254:57842] End of script output before headers: wsgi.py
+[Tue Jul 16 08:24:31.828004 2024] [cgi:error] [pid 13376] [client 192.168.122.254:57846] End of script output before headers: wsgi.py
+[Tue Jul 16 08:24:32.517310 2024] [cgi:error] [pid 13378] [client 192.168.122.254:57854] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:34:17.570894 2024] [mpm_prefork:notice] [pid 13370] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:34:17.739223 2024] [mpm_prefork:notice] [pid 14275] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:34:17.739355 2024] [core:notice] [pid 14275] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:34:20.998730 2024] [cgi:error] [pid 14278] [client 192.168.122.254:57870] End of script output before headers: wsgi.py
+[Tue Jul 16 08:34:21.671274 2024] [cgi:error] [pid 14277] [client 192.168.122.254:57882] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:39:02.941827 2024] [cgi:error] [pid 14279] [client 192.168.151.101:38288] End of script output before headers: wsgi.py
+[Tue Jul 16 08:39:08.029488 2024] [cgi:error] [pid 14280] [client 192.168.122.254:57890] End of script output before headers: wsgi.py
+[Tue Jul 16 08:39:08.685426 2024] [cgi:error] [pid 14281] [client 192.168.122.254:57892] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:40:44.494649 2024] [mpm_prefork:notice] [pid 14275] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:40:44.670855 2024] [mpm_prefork:notice] [pid 14513] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:40:44.670999 2024] [core:notice] [pid 14513] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:40:47.957763 2024] [cgi:error] [pid 14516] [client 192.168.122.254:57900] End of script output before headers: wsgi.py
+[Tue Jul 16 08:40:48.616916 2024] [cgi:error] [pid 14517] [client 192.168.122.254:57910] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:43:05.866124 2024] [cgi:error] [pid 14518] [client 192.168.149.158:60165] End of script output before headers: wsgi.py
+[Tue Jul 16 08:44:03.603503 2024] [cgi:error] [pid 14519] [client 192.168.122.254:57912] End of script output before headers: wsgi.py, referer: android-app://com.google.android.googlequicksearchbox/
+[Tue Jul 16 08:45:00.169495 2024] [cgi:error] [pid 14523] [client 192.168.149.158:60303] End of script output before headers: wsgi.py
+[Tue Jul 16 08:45:14.352178 2024] [mpm_prefork:notice] [pid 14513] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:45:14.504695 2024] [mpm_prefork:notice] [pid 14584] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:45:14.504801 2024] [core:notice] [pid 14584] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:49:40.242340 2024] [mpm_prefork:notice] [pid 14584] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:49:40.401623 2024] [mpm_prefork:notice] [pid 14627] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:49:40.401726 2024] [core:notice] [pid 14627] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:49:45.155679 2024] [cgi:error] [pid 14631] [client 192.168.149.158:52545] End of script output before headers: wsgi.py
+[Tue Jul 16 08:51:07.264474 2024] [cgi:error] [pid 14633] [client 192.168.122.254:57922] End of script output before headers: wsgi.py
+[Tue Jul 16 08:51:08.070705 2024] [cgi:error] [pid 14629] [client 192.168.122.254:57928] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:54:44.286337 2024] [cgi:error] [pid 14632] [client 192.168.122.254:57940] End of script output before headers: wsgi.py
+[Tue Jul 16 08:54:45.078553 2024] [cgi:error] [pid 14631] [client 192.168.122.254:57956] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 08:55:33.450860 2024] [mpm_prefork:notice] [pid 14627] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 08:58:50.142836 2024] [mpm_prefork:notice] [pid 15143] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 08:58:50.143073 2024] [core:notice] [pid 15143] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 08:58:53.813439 2024] [cgi:error] [pid 15145] [client 192.168.122.254:57964] End of script output before headers: wsgi.py
+[Tue Jul 16 08:58:54.600056 2024] [cgi:error] [pid 15148] [client 192.168.122.254:57966] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 09:00:24.451533 2024] [mpm_prefork:notice] [pid 15143] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 09:00:24.601074 2024] [mpm_prefork:notice] [pid 15281] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 09:00:24.601197 2024] [core:notice] [pid 15281] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 09:00:28.212615 2024] [cgi:error] [pid 15283] [client 192.168.122.254:57968] End of script output before headers: wsgi.py
+[Tue Jul 16 09:00:29.000581 2024] [cgi:error] [pid 15286] [client 192.168.122.254:57978] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 09:08:19.474651 2024] [mpm_prefork:notice] [pid 15281] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 09:08:19.668261 2024] [mpm_prefork:notice] [pid 15356] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 09:08:19.668388 2024] [core:notice] [pid 15356] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 09:08:23.456016 2024] [cgi:error] [pid 15358] [client 192.168.149.158:54068] End of script output before headers: wsgi.py
+[Tue Jul 16 09:14:03.362174 2024] [cgi:error] [pid 15359] [client 192.168.149.158:49884] End of script output before headers: wsgi.py
+[Tue Jul 16 09:14:06.281460 2024] [cgi:error] [pid 15362] [client 192.168.122.254:57986] End of script output before headers: wsgi.py
+[Tue Jul 16 09:14:07.106751 2024] [cgi:error] [pid 15361] [client 192.168.122.254:57988] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 09:17:05.989167 2024] [cgi:error] [pid 15365] [client 192.168.149.158:50057] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:37.584114 2024] [cgi:error] [pid 15360] [client 192.168.149.158:50081] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:38.951836 2024] [cgi:error] [pid 15359] [client 192.168.149.158:50083] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:39.132766 2024] [cgi:error] [pid 15362] [client 192.168.149.158:50084] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:39.319136 2024] [cgi:error] [pid 15361] [client 192.168.149.158:50085] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:39.419031 2024] [cgi:error] [pid 15358] [client 192.168.149.158:50086] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:39.575269 2024] [cgi:error] [pid 15365] [client 192.168.149.158:50088] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:49.975536 2024] [cgi:error] [pid 15360] [client 192.168.122.254:57990] End of script output before headers: wsgi.py
+[Tue Jul 16 09:17:50.731391 2024] [cgi:error] [pid 15359] [client 192.168.122.254:58006] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 09:23:12.420275 2024] [cgi:error] [pid 15362] [client 192.168.122.254:58014] End of script output before headers: wsgi.py
+[Tue Jul 16 09:23:13.214059 2024] [cgi:error] [pid 15361] [client 192.168.122.254:58020] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 09:26:29.652914 2024] [cgi:error] [pid 16178] [client 192.168.122.254:58034] End of script output before headers: wsgi.py
+[Tue Jul 16 09:28:31.612326 2024] [cgi:error] [pid 15358] [client 192.168.122.254:58044] End of script output before headers: wsgi.py
+[Tue Jul 16 09:31:47.580776 2024] [mpm_prefork:notice] [pid 15356] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 09:31:47.763641 2024] [mpm_prefork:notice] [pid 19726] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 09:31:47.763829 2024] [core:notice] [pid 19726] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 09:31:49.679714 2024] [cgi:error] [pid 19728] [client 192.168.122.254:58048] End of script output before headers: wsgi.py
+[Tue Jul 16 09:36:23.125766 2024] [mpm_prefork:notice] [pid 19726] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 09:36:23.299774 2024] [mpm_prefork:notice] [pid 19882] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 09:36:23.299922 2024] [core:notice] [pid 19882] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 09:36:29.068405 2024] [cgi:error] [pid 19885] [client 192.168.122.254:58052] End of script output before headers: wsgi.py
+[Tue Jul 16 09:36:29.872040 2024] [cgi:error] [pid 19884] [client 192.168.122.254:58060] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 09:46:27.590424 2024] [cgi:error] [pid 19886] [client 192.168.122.254:58076] End of script output before headers: wsgi.py
+[Tue Jul 16 09:46:28.408312 2024] [cgi:error] [pid 19887] [client 192.168.122.254:58090] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 09:46:29.047861 2024] [cgi:error] [pid 19888] [client 192.168.122.254:58098] End of script output before headers: wsgi.py
+[Tue Jul 16 09:46:29.838636 2024] [cgi:error] [pid 19885] [client 192.168.122.254:58162] End of script output before headers: wsgi.py
+[Tue Jul 16 09:46:29.901099 2024] [cgi:error] [pid 19892] [client 192.168.122.254:58178] End of script output before headers: wsgi.py
+[Tue Jul 16 09:46:43.047586 2024] [mpm_prefork:notice] [pid 19882] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 09:46:43.217440 2024] [mpm_prefork:notice] [pid 20036] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 09:46:43.217561 2024] [core:notice] [pid 20036] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 09:46:44.741298 2024] [cgi:error] [pid 20038] [client 192.168.122.254:58188] End of script output before headers: wsgi.py
+[Tue Jul 16 09:46:47.864050 2024] [cgi:error] [pid 20039] [client 192.168.149.158:65201] End of script output before headers: wsgi.py
+[Tue Jul 16 09:56:33.701401 2024] [cgi:error] [pid 20042] [client 192.168.149.158:65493] End of script output before headers: wsgi.py
+[Tue Jul 16 09:58:47.132527 2024] [cgi:error] [pid 20044] [client 192.168.122.254:58192] End of script output before headers: wsgi.py
+[Tue Jul 16 09:58:47.889083 2024] [cgi:error] [pid 20038] [client 192.168.122.254:58194] End of script output before headers: wsgi.py, referer: http://new.rde.ru/
+[Tue Jul 16 10:04:40.457504 2024] [mpm_prefork:notice] [pid 20036] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 10:04:40.635153 2024] [mpm_prefork:notice] [pid 20350] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 10:04:40.635282 2024] [core:notice] [pid 20350] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 10:05:04.120259 2024] [mpm_prefork:notice] [pid 20350] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 10:05:04.275694 2024] [mpm_prefork:notice] [pid 20387] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 10:05:04.275809 2024] [core:notice] [pid 20387] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 10:05:08.711915 2024] [cgi:error] [pid 20390] [client 192.168.122.254:58210] End of script output before headers: wsgi.py
+[Tue Jul 16 10:05:09.617917 2024] [cgi:error] [pid 20389] [client 192.168.122.254:58214] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 10:44:57.456399 2024] [cgi:error] [pid 20391] [client 192.168.122.254:58222] End of script output before headers: wsgi.py
+[Tue Jul 16 10:44:58.278968 2024] [cgi:error] [pid 20393] [client 192.168.122.254:58228] End of script output before headers: wsgi.py, referer: https://new.rde.ru/
+[Tue Jul 16 10:45:05.468311 2024] [mpm_prefork:notice] [pid 20387] AH00169: caught SIGTERM, shutting down
+[Tue Jul 16 10:45:05.628620 2024] [mpm_prefork:notice] [pid 20737] AH00163: Apache/2.4.41 (Ubuntu) mod_wsgi/4.6.8 Python/3.8 configured -- resuming normal operations
+[Tue Jul 16 10:45:05.628767 2024] [core:notice] [pid 20737] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Jul 16 10:45:08.564313 2024] [cgi:error] [pid 20739] [client 192.168.149.158:51365] End of script output before headers: wsgi.py

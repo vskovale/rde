@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Медиа Холдинг "Рекламный дайджест"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/rde.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header__left">
+            <div class="header__logo">
+                <a href="/"><img src="{% static 'logo/logo.png' %}" alt="Дайджест Группа Компаний"></a>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="header__top">
+                <span class="header__address">Россия, г. Томск, ул. Герцена, 72 б</span>
+                <span class="header__phone">8 (3822) 52 10 01</span>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Рекламные услуги</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('printing')">Полиграфический комплекс</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал-агентство</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Медиа и публикации</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('magazine')">Глянцевые журналы</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('tomskru')">Информационный портал</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('radio')">Радиохолдинг</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropbtn">Дизайн и производство</a>
+                        <div class="dropdown-content">
+                            <a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Производство сувениров</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('art')">Прикладное искусство</a>
+                            <a href="javascript:void(0);" onclick="scrollToSection('shcool')">Школа продаж</a>
+                        </div>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__cta">
+                <button class="cta-button" onclick="openModal()">Заказать звонок</button>
+            </div>
+            <div class="header__time-wrapper">
+                <span>Сейчас в Томске</span>
+                <span id="current-time" class="header__time"></span>
+            </div>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('printing')">Полиграфический комплекс</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('magazine')">Глянцевые журналы</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Производство сувениров</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('tomskru')">Информационный портал</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('radio')">Радиохолдинг</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал-агентство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('art')">Прикладное искусство</a></li>
+        <li><a href="javascript:void(0);" onclick="scrollToSection('shcool')">Школа продаж</a></li>
+    </ul>
+</div>
+<script>
+    // Функция для обновления текущего времени
+    function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const currentTime = `${hours}:${minutes}`;
+        document.getElementById('current-time').textContent = currentTime;
+    }
+
+    // Обновляем время каждую секунду
+    setInterval(updateTime, 1000);
+
+    // Устанавливаем начальное время
+    updateTime();
+
+    // Адаптивное меню
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('active');
+    }
+
+    function scrollToSection(id) {
+        var element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+        const menu = document.getElementById('mobileMenu');
+        const drop_menu = document.getElementById('dropdown-content');
+        console.log(drop_menu);
+        if (menu.classList.contains('active')) {
+            menu.classList.toggle('active');
+
+        }
+    }
+</script>
+<button id="scrollToTop" class="scroll-button">⬆️</button>
+<button id="scrollToBottom" class="scroll-button">⬇️</button>
+<section id="banner-slider">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="images/banner.jpeg' %}" alt="Баннер 1 в стиле Василия Кандинского">
+            <div class="banner-text">
+                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
+                <p>в стиле Василия Кандинского</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/banner1.jpeg' %}" alt="Баннер 2 в стиле Василия Кандинского">
+            <div class="banner-text">
+                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
+                <p>в стиле Василия Кандинского</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/banner2.jpeg' %}" alt="Баннер 3 в стиле Василия Кандинского">
+            <div class="banner-text">
+                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
+                <p>в стиле Василия Кандинского</p>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container" id="banner-dots">
+        <span class="dot" onclick="bannerSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="bannerSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="bannerSlider.currentSlide(2)"></span>
+    </div>
+    <button class="prev" onclick="bannerSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="bannerSlider.changeSlide(1)">&#10095;</button>
+</section>
+
+<div class="slider" id="agency">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/agency.jpeg' %}" alt="Рекламное агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Рекламное агентство</h2>
+                <ul>
+                    <li>Агентство полного цикла</li>
+                    <li>Рекламные кампании</li>
+                    <li>Полное сопровождение</li>
+                    <li>Маркетинг</li>
+                    <li>Ваш личный менеджер</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/logo.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/printing%20department.jpeg' %}" alt="Полиграфический комплекс" class="slide-img">
+            <div class="slide-text">
+                <h2>Полиграфический комплекс</h2>
+                <ul>
+                    <li>Листовки</li>
+                    <li>Газеты</li>
+                    <li>Наклейки</li>
+                    <li>Книги</li>
+                    <li>Журналы</li>
+                    <li>Визитки</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/grandprint.png' %}" alt="Полиграфический комплекс" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <div class="slide-text">
+                <h2>Наружная реклама</h2>
+                <ul>
+                    <li>Билборды (6х3 м) – 385 сторон</li>
+                    <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
+                    <li>Суперсайты (15х5 м) – 9 сторон</li>
+                    <li>Печать</li>
+                    <li>Производство стендов</li>
+                    <li>Вывески, указатели</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <div class="slide-text">
+                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <ul>
+                    <li>Статьи</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Новости</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <div class="slide-text">
+                <h2>Производство сувениров</h2>
+                <ul>
+                    <li>Производство флагов</li>
+                    <li>Любые нанесения на одежду (футболки, куртки)</li>
+                    <li>Любые сувениры</li>
+                    <li>Пледы, шторы, скатерти</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="agency-dots">
+        <span class="dot" onclick="agencySlider.currentSlide(0)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(1)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(2)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(3)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(4)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(5)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(6)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(7)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(8)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(9)"></span>
+        <span class="dot" onclick="agencySlider.currentSlide(10)"></span>
+    </div>
+    <button class="prev" onclick="agencySlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="agencySlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="printing">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/printing%20department.jpeg' %}" alt="Полиграфический комплекс" class="slide-img">
+            <div class="slide-text">
+                <h2>Полиграфический комплекс</h2>
+                <ul>
+                    <li>Листовки</li>
+                    <li>Газеты</li>
+                    <li>Наклейки</li>
+                    <li>Книги</li>
+                    <li>Журналы</li>
+                    <li>Визитки</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/grandprint.png' %}" alt="Полиграфический комплекс" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <div class="slide-text">
+                <h2>Наружная реклама</h2>
+                <ul>
+                    <li>Билборды (6х3 м) – 385 сторон</li>
+                    <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
+                    <li>Суперсайты (15х5 м) – 9 сторон</li>
+                    <li>Печать</li>
+                    <li>Производство стендов</li>
+                    <li>Вывески, указатели</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <div class="slide-text">
+                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <ul>
+                    <li>Статьи</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Новости</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <div class="slide-text">
+                <h2>Производство сувениров</h2>
+                <ul>
+                    <li>Производство флагов</li>
+                    <li>Любые нанесения на одежду (футболки, куртки)</li>
+                    <li>Любые сувениры</li>
+                    <li>Пледы, шторы, скатерти</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="printing-dots">
+        <span class="dot" onclick="printingSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(4)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(5)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(6)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(7)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(8)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(9)"></span>
+    </div>
+    <button class="prev" onclick="printingSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="printingSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="billboard">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <div class="slide-text">
+                <h2>Наружная реклама</h2>
+                <ul>
+                    <li>Билборды (6х3 м) – 385 сторон</li>
+                    <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
+                    <li>Суперсайты (15х5 м) – 9 сторон</li>
+                    <li>Печать</li>
+                    <li>Производство стендов</li>
+                    <li>Вывески, указатели</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <div class="slide-text">
+                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <ul>
+                    <li>Статьи</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Новости</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <div class="slide-text">
+                <h2>Производство сувениров</h2>
+                <ul>
+                    <li>Производство флагов</li>
+                    <li>Любые нанесения на одежду (футболки, куртки)</li>
+                    <li>Любые сувениры</li>
+                    <li>Пледы, шторы, скатерти</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="billboard-dots">
+        <span class="dot" onclick="billboardSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(4)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(5)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(6)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(7)"></span>
+        <span class="dot" onclick="billboardSlider.currentSlide(8)"></span>
+
+    </div>
+    <button class="prev" onclick="billboardSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="billboardSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="magazine">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <div class="slide-text">
+                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <ul>
+                    <li>Статьи</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Новости</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <div class="slide-text">
+                <h2>Производство сувениров</h2>
+                <ul>
+                    <li>Производство флагов</li>
+                    <li>Любые нанесения на одежду (футболки, куртки)</li>
+                    <li>Любые сувениры</li>
+                    <li>Пледы, шторы, скатерти</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="magazine-dots">
+        <span class="dot" onclick="magazineSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(4)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(5)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(6)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(7)"></span>
+    </div>
+    <button class="prev" onclick="magazineSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="magazineSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="souvenir">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <div class="slide-text">
+                <h2>Производство сувениров</h2>
+                <ul>
+                    <li>Производство флагов</li>
+                    <li>Любые нанесения на одежду (футболки, куртки)</li>
+                    <li>Любые сувениры</li>
+                    <li>Пледы, шторы, скатерти</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="souvenir-dots">
+        <span class="dot" onclick="souvenirSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(4)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(5)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(6)"></span>
+    </div>
+    <button class="prev" onclick="souvenirSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="souvenirSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="tomskru">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <div class="slide-text">
+                <h2>Информационный портал Tomsk.ru</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Подкасты</li>
+                    <li>Интервью</li>
+                    <li>Домены в зоне tomsk.ru</li>
+                    <li>Видео</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="tomskru-dots">
+        <span class="dot" onclick="tomskruSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="tomskruSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="tomskruSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="tomskruSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="tomskruSlider.currentSlide(4)"></span>
+        <span class="dot" onclick="tomskruSlider.currentSlide(5)"></span>
+    </div>
+    <button class="prev" onclick="tomskruSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="tomskruSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="radio">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="radio-dots">
+        <span class="dot" onclick="radioSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="radioSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="radioSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="radioSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="radioSlider.currentSlide(4)"></span>
+    </div>
+    <button class="prev" onclick="radioSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="radioSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="design">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="design-dots">
+        <span class="dot" onclick="designSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="designSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="designSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="designSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="designSlider.currentSlide(4)"></span>
+
+    </div>
+    <button class="prev" onclick="designSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="designSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="digital">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="digital-dots">
+        <span class="dot" onclick="digitalSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="digitalSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="digitalSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="digitalSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="digitalSlider.currentSlide(4)"></span>
+    </div>
+    <button class="prev" onclick="digitalSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="digitalSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="art">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="art-dots">
+        <span class="dot" onclick="artSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="artSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="artSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="artSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="artSlider.currentSlide(4)"></span>
+
+    </div>
+    <button class="prev" onclick="artSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="artSlider.changeSlide(1)">&#10095;</button>
+</div>
+
+<div class="slider" id="shcool">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <div class="slide-text">
+                <h2>Школа продаж</h2>
+                <ul>
+                    <li>Аудит и стратегия отдела продаж</li>
+                    <li>Тренинги продаж (от холодных до розничных)</li>
+                    <li>Аудит и стратегия отдела маркетинга</li>
+                    <li>Корпоративная система обучения сотрудников</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <div class="slide-text">
+                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <ul>
+                    <li>Продакшн-студия</li>
+                    <li>Ролики</li>
+                    <li>Интервью</li>
+                    <li>Поздравления</li>
+                    <li>Подкасты</li>
+                    <li>Выездная студия</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел дизайна</h2>
+                <ul>
+                    <li>Полиграфия</li>
+                    <li>Наружная реклама</li>
+                    <li>Книги</li>
+                    <li>Буклеты</li>
+                    <li>Логотипы</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <div class="slide-text">
+                <h2>Диджитал-агентство</h2>
+                <ul>
+                    <li>Аудит</li>
+                    <li>Разработка сайтов, посадочных страниц</li>
+                    <li>Настройка рекламы</li>
+                    <li>Исследования ЦА</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <div class="slide-text">
+                <h2>Отдел прикладного искусства</h2>
+                <ul>
+                    <li>Томская лошадка</li>
+                    <li>Нестандартные изделия из дерева</li>
+                    <li>Сувениры ручной работы</li>
+                    <li>Поддоны и упаковка</li>
+                    <li>Мастер-классы и обучение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
+                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="shcool-dots">
+        <span class="dot" onclick="shcoolSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="shcoolSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="shcoolSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="shcoolSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="shcoolSlider.currentSlide(4)"></span>
+
+    </div>
+    <button class="prev" onclick="shcoolSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="shcoolSlider.changeSlide(1)">&#10095;</button>
+</div>
+<section class="form-section">
+    <div class="form-container">
+        <h2>Задайте свой вопрос!</h2>
+        <p>Для получения ответа заполните, пожалуйста, форму обратной связи</p>
+        <form action="#">
+            <input type="text" placeholder="Имя" required>
+            <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
+            <textarea placeholder="Вопрос" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
+    </div>
+</section>
+<!-- Модальное окно -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="form-container">
+            <h2>Задайте свой вопрос!</h2>
+            <p>Для получения ответа заполните, пожалуйста, форму обратной связи</p>
+            <form action="#">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
+                <textarea placeholder="Вопрос" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
+        </div>
+    </div>
+</div>
+<!--<script>
+    // Функции для открытия и закрытия модального окна
+
+
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.getElementsByClassName('dot');
+        currentSlide += direction;
+        console.log('direction:', direction);
+        console.log('currentSlide:', currentSlide);
+        console.log('slides.length:', slides.length);
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        } else if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+</script>-->
+<script> function Slider(sliderId, dotsContainerId) {
+    this.currentSlideIndex = 0;
+    this.sliderWrapper = document.querySelector(`#${sliderId} .slider-wrapper`);
+    this.slides = document.querySelectorAll(`#${sliderId} .slide`);
+    this.dots = document.querySelectorAll(`#${dotsContainerId} .dot`);
+
+    this.changeSlide = (direction) => {
+        this.currentSlideIndex += direction;
+
+        if (this.currentSlideIndex >= this.slides.length) {
+            this.currentSlideIndex = 0;
+        } else if (this.currentSlideIndex < 0) {
+            this.currentSlideIndex = this.slides.length - 1;
+        }
+
+        this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+        this.updateDots();
+    };
+
+    this.currentSlide = (n) => {
+        this.currentSlideIndex = n;
+        this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+        this.updateDots();
+    };
+
+    this.updateDots = () => {
+        this.dots.forEach(dot => dot.classList.remove('active'));
+        this.dots[this.currentSlideIndex].classList.add('active');
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        this.dots[this.currentSlideIndex].classList.add('active');
+    });
+}
+
+const bannerSlider = new Slider('banner-slider', 'banner-dots');
+const agencySlider = new Slider('agency', 'agency-dots');
+const printingSlider = new Slider('printing', 'printing-dots');
+const billboardSlider = new Slider('billboard', 'billboard-dots');
+const magazineSlider = new Slider('magazine', 'magazine-dots');
+const souvenirSlider = new Slider('souvenir', 'souvenir-dots');
+const tomskruSlider = new Slider('tomskru', 'tomskru-dots');
+const radioSlider = new Slider('radio', 'radio-dots');
+const designSlider = new Slider('design', 'design-dots');
+const digitalSlider = new Slider('digital', 'digital-dots');
+const artSlider = new Slider('art', 'art-dots');
+const shcoolSlider = new Slider('shcool', 'shcool-dots');
+function openModal() {
+    document.getElementById('contactModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('contactModal').style.display = 'none';
+}
+
+// Закрытие модального окна при клике вне его
+window.onclick = function(event) {
+    const modal = document.getElementById('contactModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
+<script src="{% static 'scroll.js' %}"></script>
+{% endblock %}
