@@ -14,7 +14,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000; /* Убедитесь, что хедер будет сверху всех элементов */
-    box-shadow: 0 30px 30px 30px rgb(0 0 0 / 65%);
+    /* box-shadow: 0 30px 30px 30px rgb(0 0 0 / 65%);*/
     height: 80px;
 }
 
@@ -27,9 +27,6 @@ header {
     align-items: center; /* Выровнять элементы по вертикали */
 }
 
-.header__left {
-    flex: 0 0 20%;
-}
 
 .header__center {
     flex: 0 0 60%;
@@ -38,7 +35,7 @@ header {
 }
 
 .header__right {
-    flex: 0 0 20%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,10 +288,10 @@ header {
     max-width: 100%;
     margin: auto;
     overflow: hidden;
+    height: 100vh;
 }
 
 .slider-wrapper {
-    height: 100vh;
     display: flex;
     transition: transform 0.5s ease;
 }
@@ -317,6 +314,18 @@ header {
     padding: 20px;
     color: white;
 }
+.slide-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    color: white;
+}
+.slide-title h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+}
+
 
 .slide-text h2 {
     font-size: 36px;
@@ -731,8 +740,14 @@ header {
         margin: 0 0 20px 0;
     }
 
+    .slide-title {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
     .slide {
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .slide-img {
@@ -800,9 +815,14 @@ header {
         font-size: 20px;
         margin: 0 0 20px 0;
     }
+    .slide-title {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
 
     .slide {
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .slide-img {
@@ -824,7 +844,7 @@ header {
     }
 
     .prev, .next {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .page-text h2 {
@@ -885,9 +905,7 @@ header {
     .header__top, .header__right {
         display: none;
     }
-    .header__left {
-    flex: 0 0 20%;
-}
+
 
 .header__center {
     flex: 0 0 75%;
@@ -927,6 +945,10 @@ header {
 
     .slide-text h2 {
         font-size: 30px;
+    }
+    .slide-title {
+        font-size: 30px;
+
     }
 
     .slide {
@@ -980,6 +1002,10 @@ header {
     .slide-text h2 {
         font-size: 36px;
     }
+    .slide-title {
+        font-size: 36px;
+
+    }
 
     .slide {
         flex-direction: row;
@@ -1008,6 +1034,7 @@ header {
     }
     .slide {
         flex-direction: column;
+        justify-content: flex-start;
     }
     .header__nav ul {
         display: none;
@@ -1031,7 +1058,6 @@ header {
         display: none;
     }
         .slide {
-            padding-top: 100px;
             font-size: 0.9em
         }
         header{

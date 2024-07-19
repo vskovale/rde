@@ -385,3 +385,46 @@
 </div>-->
 </body>
 </html>
+
+
+<!--
+<h2 class="gallery-title">Галерея</h2>
+<div class="slider-container-wrapper">
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <div class="slider">
+        <div class="slider-container" id="slider-container">
+            {% for image in images %}
+            {% for slider in sliders %}
+            <section id="{{ slider.title|slugify }}">
+                <div class="slider-wrapper">
+                    {% for slide in slider.slides.all %}
+                    <div class="slide">
+                        <div class="banner-text">
+                            <h2>{{ slide.title }}</h2>
+                            <p>{{ slide.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="dots-container" id="{{ slider.title|slugify }}-dots">
+                    {% for slide in slider.slides.all %}
+                    <span class="dot" onclick="{{ slider.title|slugify }}Slider.currentSlide({{ forloop.counter0 }})"></span>
+                    {% endfor %}
+                </div>
+                <button class="prev" onclick="{{ slider.title|slugify }}Slider.changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="{{ slider.title|slugify }}Slider.changeSlide(1)">&#10095;</button>
+            </section>
+            {% endfor %}
+            <div class="slider-item">
+                <img src="/{{ image }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+<div class="dots-container">
+    {% for image in images %}
+    <span class="dot" onclick="currentSlide({{ forloop.counter0 }})"></span>
+    {% endfor %}
+</div>-->

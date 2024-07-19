@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
+{% load debug_tags %}
 {% load static %}
 {% block title %}
 Медиа Холдинг "Рекламный дайджест"
 {% endblock %}
 
+
 {% block content %}
 <button id="scrollToTop" class="scroll-button">⬆️</button>
 <button id="scrollToBottom" class="scroll-button">⬇️</button>
-
+<h1>{{ sliders }}</h1>
+<!--
 {% for slider in sliders %}
 <section id="{{ slider.title|slugify }}">
     <div class="slider-wrapper">
         {% for slide in slider.slides.all %}
         <div class="slide">
-            <img src="{{ slide.image.url }}" alt="{{ slide.title }}">
             <div class="banner-text">
                 <h2>{{ slide.title }}</h2>
                 <p>{{ slide.description }}</p>
@@ -29,7 +31,7 @@
     <button class="prev" onclick="{{ slider.title|slugify }}Slider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="{{ slider.title|slugify }}Slider.changeSlide(1)">&#10095;</button>
 </section>
-{% endfor %}
+{% endfor %}-->
 
 <section class="form-section">
     <div class="form-container">
@@ -38,7 +40,7 @@
         <form action="#">
             <input type="text" placeholder="Имя" required>
             <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
-            <textarea placeholder="Вопрос" required></textarea>
+            <textarea placeholder="{{ sliders }}" required></textarea>
             <button type="submit">Отправить</button>
         </form>
         <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
