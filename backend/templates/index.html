@@ -11,24 +11,54 @@
 <section id="banner-slider">
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/banner.jpeg' %}" alt="Баннер 1 в стиле Василия Кандинского">
+            <img src="{% static 'images/banner/Рекламный даджест Герцена 72 б Томск.webp' %}"
+                 alt="Рекламный даджест Герцена 72 б Томск" title="Рекламный даджест Герцена 72 б Томск">
             <div class="banner-text">
-                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
-                <p>в стиле Василия Кандинского</p>
+                <h2>РЕКЛАМНЫЙ ДАЙДЖЕСТ</h2>
+                <h3>в стиле Василия Кандинского</h3>
+                <p>Сайт создан нейросетью</p>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/banner1.jpeg' %}" alt="Баннер 2 в стиле Василия Кандинского">
+            <img src="{% static 'images/banner/Группа компаний Рекламный дайджест все виды рекламы.webp' %}" loading="lazy"
+                 alt="Группа компаний Рекламный дайджест все виды рекламы" title="Группа компаний Рекламный дайджест все виды рекламы">
             <div class="banner-text">
-                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
-                <p>в стиле Василия Кандинского</p>
+                <h3>Нейросетью созданы:</h3>
+                <ul>
+                    <li>Изображение, в этом месяце в стиле Василия Кандинского</li>
+                    <li>Семантическое ядро</li>
+                    <li>Код сайта</li>
+                </ul>
+
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/banner2.jpeg' %}" alt="Баннер 3 в стиле Василия Кандинского">
+            <img src="{% static 'images/banner/Размещение рекламы.webp' %}" loading="lazy"
+                 alt="Размещение рекламы" title="Размещение рекламы">
             <div class="banner-text">
-                <h2>РЕКЛАМНЫЙ</h2><h2>ДАЙДЖЕСТ</h2>
-                <p>в стиле Василия Кандинского</p>
+                <h2>О нас</h2>
+                <h3>Основаны в 1994 году</h3>
+                <p>Самая крупная компания в Томске на рынке рекламы</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/banner/Рекламная компания.webp' %}" loading="lazy"
+                 alt="Рекламная компания" title="Рекламная компания">
+            <div class="banner-text">
+                <h3>Все виды рекламных услуг в Томске</h3>
+                <p>Разработка и изготовление рекламы любой сложности</p>
+                <p>Собственная производственная база – без посредников</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/banner/Рекламный дайджест Вакансии.webp' %}" loading="lazy"
+                 alt="Рекламный дайджест Вакансии" title="Рекламный дайджест Вакансии">
+            <div class="banner-text">
+                <h2>Вакансии </h2>
+                <p>У нас работают более 300 сотрудников</p>
+                <p>Мы всегда берем на работу самых талантливых и можно без опыта</p>
+                <p>Оставить контакты или резюме<button onclick="openModal()">Отправить</button></p>
+
             </div>
         </div>
     </div>
@@ -36,214 +66,146 @@
         <span class="dot" onclick="bannerSlider.currentSlide(0)"></span>
         <span class="dot" onclick="bannerSlider.currentSlide(1)"></span>
         <span class="dot" onclick="bannerSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="bannerSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="bannerSlider.currentSlide(4)"></span>
     </div>
     <button class="prev" onclick="bannerSlider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="bannerSlider.changeSlide(1)">&#10095;</button>
 </section>
-
-<div class="slider" id="printing">
-    <h2 class="slide-title">Типография Д Принт</h2>
+<div class="slider" id="agency">
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Полиграфический комплекс" class="slide-img">
+            <img src="{% static 'images/agency/Рекламное агентство Томск.jpg' %}" alt="Рекламное агентство Томск" title="Рекламное агентство Томск" class="slide-img">
             <div class="slide-text">
-                <h2>Полиграфические услуги </h2>
+                <div class="slide-title">
+                    <h2 >Рекламное агентство</h2>
+                    <p>Основано в 1995 году. Томск.</p>
+                </div>
+                <h2>Все виды рекламных услуг</h2>
                 <ul>
-                    <li>Офсетная печать</li>
-                    <li>Цифровая печать</li>
-                    <li>Широкоформатная</li>
-                    <li>Сублимационная</li>
-                    <li>Ламирование</li>
-                    <li>Фольгирование</li>
-                    <li>УФ-печать</li>
-                    <li>Переплет</li>
-                    <li>Гравюра</li>
+                    <li>Цифровая реклама</li>
+                    <li>Контекстная реклама</li>
+                    <li>Наружная реклама</li>
+                    <li>Радио реклама</li>
+                    <li>Телевизионная реклама</li>
+                    <li>Реклама в интернете</li>
+                    <li>Социальная реклама</li>
+                    <li>Медийная реклама</li>
+                    <li>Видеореклама</li>
+                    <li>Промо-акции</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/grandprint.png' %}" alt="Полиграфический комплекс" class="page-logo">
+                    <a href="https://rde.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <img src="{% static 'images/agency/Рекламное агентство Рекламный дайджест Томск рекламные кампании.jpg' %}"
+                 alt="Рекламное агентство Рекламный дайджест Томск рекламные кампании" loading="lazy"
+                 title="Рекламное агентство Рекламный дайджест Томск рекламные кампании" class="slide-img">
             <div class="slide-text">
-                <h2>Полиграфическая продукция </h2>
+                <div class="slide-title">
+                    <h2 >Рекламное агентство</h2>
+                    <p>Основано в 1995 году. Томск.</p>
+                </div>
+                <h2>Маркетинг и рекламные стратегии</h2>
                 <ul>
-                    <li>Афиши</li>
-                    <li>Визитки</li>
-                    <li>Листовки</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Каталоги</li>
-                    <li>Журналы</li>
-                    <li>Календари</li>
-                    <li>Брошюра</li>
+                    <li>Брендинг</li>
+                    <li>SEO</li>
+                    <li>SMM (социальные сети)</li>
+                    <li>Контент-маркетинг</li>
+                    <li>E-mail маркетинг</li>
+                    <li>Партизанский маркетинг</li>
+                    <li>Инфлюенсер маркетинг</li>
+                    <li>Лидогенерация</li>
+                    <li>Маркетинговый анализ</li>
+                    <li>PR стратегии</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                    <a href="https://rde.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <img src="{% static 'images/agency/Рекламное агентство Рекламный дайджест Томск маркетинг.jpg' %}" loading="lazy"
+                 alt='Рекламное агентство Рекламный дайджест Томск маркетинг' title='Рекламное агентство Рекламный дайджест Томск маркетинг' class="slide-img">
             <div class="slide-text">
-                <h2>Полиграфическая продукция </h2>
-                <ul>
-                    <li>Бланки</li>
-                    <li>Наклейки</li>
-                    <li>Этикетки</li>
-                    <li>Плакаты</li>
-                    <li>Упаковка</li>
-                    <li>Тиснение</li>
-                    <li>Штампы</li>
-                    <li>Лакирование</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                <div class="slide-title">
+                    <h2 >Рекламное агентство</h2>
+                    <p>Основано в 1995 году. Томск.</p>
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Производство сувениров" class="slide-img">
-            <div class="slide-text">
                 <h2>Дополнительные услуги</h2>
                 <ul>
                     <li>Дизайн</li>
-                    <li>Верстка</li>
-                    <li>Переплет</li>
-                    <li>Корректор</li>
-                    <li>Редактор</li>
-                    <li>Упаковка</li>
-                    <li>Доставка</li>
-                    <li>Услуги печати</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Информационный портал" class="slide-img">
-            <div class="slide-text">
-                <h2>Целевая  продукция</h2>
-                <ul>
-                    <li>Корпоративная полиграфия</li>
-                    <li>Печать для бизнеса</li>
-                    <li>Рекламная полиграфия</li>
-                    <li>Печать для мероприятий</li>
-                    <li>Полиграфия для стартапов</li>
-                    <li>Полиграфия для магазинов</li>
-                    <li>Печать для ресторанов</li>
-                    <li>Полиграфия для школ и университетов</li>
-                    <li>Печать приглашений</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="printing-dots">
-        <span class="dot" onclick="printingSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="printingSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="printingSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="printingSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="printingSlider.currentSlide(4)"></span>
-    </div>
-    <button class="prev" onclick="printingSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="printingSlider.changeSlide(1)">&#10095;</button>
-</div>
-
-<div class="slider" id="agency">
-    <h2 class="slide-title">Рекламное агентство</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/agency.jpeg' %}" alt="Рекламное агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Рекламное агентство</h2>
-                <ul>
-                    <li>Агентство полного цикла</li>
+                    <li>Разработка сайтов</li>
+                    <li>Аналитика</li>
+                    <li>Медиа-планирование</li>
                     <li>Рекламные кампании</li>
-                    <li>Полное сопровождение</li>
-                    <li>Маркетинг</li>
-                    <li>Ваш личный менеджер</li>
+                    <li>Копирайтинг</li>
+                    <li>Фото- и видеосъемка</li>
+                    <li>Полиграфические услуги</li>
+                    <li>Создание презентаций</li>
+                    <li>Организация мероприятий</li>
                 </ul>
+
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/logo.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                    <a href="https://rde.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/printing%20department.jpeg' %}" alt="Полиграфический комплекс" class="slide-img">
+            <img src="{% static 'images/agency/Рекламное агентство Рекламный дайджест  Томск Вакансии.jpg' %}" loading="lazy"
+                 alt='Рекламное агентство Рекламный дайджест  Томск Вакансии' title='Рекламное агентство Рекламный дайджест  Томск Вакансии' class="slide-img">
             <div class="slide-text">
-                <h2>Полиграфический комплекс</h2>
+                <div class="slide-title">
+                    <h2 >Рекламное агентство</h2>
+                    <p>Основано в 1995 году. Томск.</p>
+                </div>
+                <h2>Тематические услуги</h2>
                 <ul>
-                    <li>Листовки</li>
-                    <li>Газеты</li>
-                    <li>Наклейки</li>
-                    <li>Книги</li>
-                    <li>Журналы</li>
-                    <li>Визитки</li>
+                    <li>Реклама для бизнеса</li>
+                    <li>Продвижение стартапов</li>
+                    <li>Рекламные кампании</li>
+                    <li>Реклама для малого бизнеса</li>
+                    <li>Маркетинг для IT-компаний</li>
+                    <li>Реклама для медицинских учреждений</li>
+                    <li>Реклама для ресторанов</li>
+                    <li>Реклама для застройщиков</li>
+                    <li>Реклама для образовательных учреждений</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/grandprint.png' %}" alt="Полиграфический комплекс" class="page-logo">
+                    <a href="https://rde.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <img src="{% static 'images/agency/Рекламное агентство Рекламный дайджест  рекламные стратегии.jpg' %}" loading="lazy"
+                 alt='Рекламное агентство Рекламный дайджест  рекламные стратегии' title='Рекламное агентство Рекламный дайджест  рекламные стратегии' class="slide-img">
             <div class="slide-text">
-                <h2>Наружная реклама</h2>
-                <ul>
-                    <li>Билборды (6х3 м) – 385 сторон</li>
-                    <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
-                    <li>Суперсайты (15х5 м) – 9 сторон</li>
-                    <li>Печать</li>
-                    <li>Производство стендов</li>
-                    <li>Вывески, указатели</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                <div class="slide-title">
+                    <h2 >Рекламное агентство</h2>
+                    <p>Основано в 1995 году. Томск.</p>
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
-            <div class="slide-text">
-                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <h2>Инновация в рекламе</h2>
                 <ul>
-                    <li>Статьи</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Новости</li>
+                    <li>Использование AI в рекламе</li>
+                    <li>Искусственный интеллект в маркетинге</li>
+                    <li>AI инструменты для рекламы</li>
+                    <li>Автоматизация рекламы с AI</li>
+                    <li>AI в digital маркетинге</li>
+                    <li>VR реклама</li>
+                    <li>Использование VR в маркетинге</li>
+                    <li>VR технологии для продвижения</li>
+                    <li>Адаптивная реклама</li>
+                    <li>Динамическая реклама</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
-            <div class="slide-text">
-                <h2>Производство сувениров</h2>
-                <ul>
-                    <li>Производство флагов</li>
-                    <li>Любые нанесения на одежду (футболки, куртки)</li>
-                    <li>Любые сувениры</li>
-                    <li>Пледы, шторы, скатерти</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                    <a href="https://rde.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
@@ -258,95 +220,135 @@
     <button class="prev" onclick="agencySlider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="agencySlider.changeSlide(1)">&#10095;</button>
 </div>
-
 <div class="slider" id="billboard">
-    <h2 class="slide-title">Наружная реклама</h2>
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/billboard.jpeg' %}" alt="Наружная реклама" class="slide-img">
+            <img src="{% static 'images/billboard/Баннер.jpg' %}" loading="lazy" alt="Баннер" title="Баннер" class="slide-img">
             <div class="slide-text">
-                <h2>Наружная реклама</h2>
+                <div class="slide-title">
+                    <h2 >Наружная реклама</h2>
+                    <p>Основано в 1997 году. Томск.</p>
+                </div>
+                <h2>Размещение наружной рекламы</h2>
                 <ul>
-                    <li>Билборды (6х3 м) – 385 сторон</li>
-                    <li>Сити-форматы (1,2х1,8 м) – 58 сторон</li>
-                    <li>Суперсайты (15х5 м) – 9 сторон</li>
-                    <li>Печать</li>
-                    <li>Производство стендов</li>
-                    <li>Вывески, указатели</li>
+                    <li>Томск. Пенза. Саратов. Хабаровск.</li>
+                    <li>Барнаул. Екатеринбург.</li>
+                    <li>Билборды</li>
+                    <li>Супер сайты</li>
+                    <li>Сити форматы</li>
+                    <li>Брендмауэры</li>
+                    <li>Цифровые билборды</li>
+                    <li>LED-экраны</li>
+                    <li>Призматроны (три-вижн)</li>
                 </ul>
+
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/street%20media.png' %}" alt="Наружная реклама" class="page-logo">
+                    <a href="https://smedia.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
+            <img src="{% static 'images/billboard/Билборд.jpg' %}" alt="Билборд" title="Билборд" class="slide-img">
             <div class="slide-text">
-                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
+                <div class="slide-title">
+                    <h2 >Наружная реклама</h2>
+                    <p>Основано в 1997 году. Томск.</p>
+                </div>
+                <h2>Производство наружной рекламы</h2>
                 <ul>
-                    <li>Статьи</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Новости</li>
+                    <li>Вывески</li>
+                    <li>Баннера</li>
+                    <li>Световые короба</li>
+                    <li>Объемные буквы</li>
+                    <li>Гирлянды</li>
+                    <li>Лайтбоксы</li>
+                    <li>Витрины</li>
+                    <li>Рекламные щиты</li>
+                    <li>Указатели</li>
+                    <li>Информационные стенды</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
+                    <a href="https://smedia.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
+            <img src="{% static 'images/billboard/Вывеска.jpg' %}" loading="lazy" alt='Вывеска' title='Вывеска' class="slide-img">
             <div class="slide-text">
-                <h2>Производство сувениров</h2>
+                <div class="slide-title">
+                    <h2 >Наружная реклама</h2>
+                    <p>Основано в 1997 году. Томск.</p>
+                </div>
+                <h2>Производство наружной рекламы</h2>
                 <ul>
-                    <li>Производство флагов</li>
-                    <li>Любые нанесения на одежду (футболки, куртки)</li>
-                    <li>Любые сувениры</li>
-                    <li>Пледы, шторы, скатерти</li>
+                    <li>Стеллы</li>
+                    <li>Пилоны</li>
+                    <li>Арт-объекты</li>
+                    <li>Гигантские фигуры</li>
+                    <li>Крышные установки</li>
+                    <li>Флаговые конструкции</li>
+                    <li>Панели-кронштейны</li>
+                    <li>Тумбы и пиллары</li>
+                    <li>Арки и ворота</li>
+                    <li>Оклейка транспорта</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
+                    <a href="https://smedia.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
+            <img src="{% static 'images/billboard/Наружная реклама Томск.jpg' %}" loading="lazy" alt='Наружная реклама Томск' title='Наружная реклама Томск' class="slide-img">
             <div class="slide-text">
-                <h2>Информационный портал Tomsk.ru</h2>
+                <div class="slide-title">
+                    <h2 >Наружная реклама</h2>
+                    <p>Основано в 1997 году. Томск.</p>
+                </div>
+                <h2>Готовые решения</h2>
                 <ul>
-                    <li>Новости</li>
-                    <li>Подкасты</li>
-                    <li>Интервью</li>
-                    <li>Домены в зоне tomsk.ru</li>
-                    <li>Видео</li>
+                    <li>Для малого бизнеса</li>
+                    <li>Для мероприятий</li>
+                    <li>Для медицинских учреждений</li>
+                    <li>Для магазинов</li>
+                    <li>Для ресторанов</li>
+                    <li>Для торговых центров</li>
+                    <li>Для стартапов</li>
+                    <li>Для банков</li>
                 </ul>
+
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
+                    <a href="https://smedia.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <img src="{% static 'images/billboard/Наружная реклама.jpg' %}" loading="lazy" alt='Наружная реклама' title='Наружная реклама' class="slide-img">
             <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
+            <div class="slide-title">
+                <h2 >Наружная реклама</h2>
+                <p>Основано в 1997 году. Томск.</p>
             </div>
-        </div>
+            <h2>Готовые решения</h2>
+            <ul>
+                <li>Для выставок</li>
+                <li>Для отелей</li>
+                <li>Для бутиков</li>
+                <li>Для застройщиков</li>
+                <li>Для автосалонов</li>
+                <li>Для аптек</li>
+                <li>Для фитнес-центров</li>
+                <li>Для образовательных учреждений</li>
+            </ul>
+
+            <div class="page-about">
+                <a href="https://smedia.rde.ru/" class="page-link">Перейти на сайт</a>
+                <button class="page-link" onclick="openModal()">Рассчитать</button>
+            </div>
+        </div></div>
     </div>
     <div class="dots-container"  id="billboard-dots">
         <span class="dot" onclick="billboardSlider.currentSlide(0)"></span>
@@ -358,385 +360,125 @@
     <button class="prev" onclick="billboardSlider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="billboardSlider.changeSlide(1)">&#10095;</button>
 </div>
-<div class="slider" id="magazine">
-    <h2 class="slide-title">Журнал "Дорогое удовольствие" "МОСТ"</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/magazine.jpeg' %}" alt='Журнал "Дорогое удовольствие" "МОСТ"' class="slide-img">
-            <div class="slide-text">
-                <h2>Журнал "Дорогое удовольствие" "МОСТ"</h2>
-                <ul>
-                    <li>Статьи</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Новости</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/expensive.png' %}" alt="Рекламный Дайджест Агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
-            <div class="slide-text">
-                <h2>Производство сувениров</h2>
-                <ul>
-                    <li>Производство флагов</li>
-                    <li>Любые нанесения на одежду (футболки, куртки)</li>
-                    <li>Любые сувениры</li>
-                    <li>Пледы, шторы, скатерти</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
-            <div class="slide-text">
-                <h2>Информационный портал Tomsk.ru</h2>
-                <ul>
-                    <li>Новости</li>
-                    <li>Подкасты</li>
-                    <li>Интервью</li>
-                    <li>Домены в зоне tomsk.ru</li>
-                    <li>Видео</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
-            <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="magazine-dots">
-        <span class="dot" onclick="magazineSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="magazineSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="magazineSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="magazineSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="magazineSlider.currentSlide(4)"></span>
-    </div>
-    <button class="prev" onclick="magazineSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="magazineSlider.changeSlide(1)">&#10095;</button>
-</div>
-<div class="slider" id="souvenir">
-    <h2 class="slide-title">Производство сувениров</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/souvenir.jpeg' %}" alt="Производство сувениров" class="slide-img">
-            <div class="slide-text">
-                <h2>Производство сувениров</h2>
-                <ul>
-                    <li>Производство флагов</li>
-                    <li>Любые нанесения на одежду (футболки, куртки)</li>
-                    <li>Любые сувениры</li>
-                    <li>Пледы, шторы, скатерти</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/first_com.png' %}" alt="Производство сувениров" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
-            <div class="slide-text">
-                <h2>Информационный портал Tomsk.ru</h2>
-                <ul>
-                    <li>Новости</li>
-                    <li>Подкасты</li>
-                    <li>Интервью</li>
-                    <li>Домены в зоне tomsk.ru</li>
-                    <li>Видео</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
-            <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
-                <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="souvenir-dots">
-        <span class="dot" onclick="souvenirSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="souvenirSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="souvenirSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="souvenirSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="souvenirSlider.currentSlide(4)"></span>
-    </div>
-    <button class="prev" onclick="souvenirSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="souvenirSlider.changeSlide(1)">&#10095;</button>
-</div>
-<div class="slider" id="tomskru">
-    <h2 class="slide-title">Информационный портал Tomsk.ru</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Информационный портал" class="slide-img">
-            <div class="slide-text">
-                <h2>Информационный портал Tomsk.ru</h2>
-                <ul>
-                    <li>Новости</li>
-                    <li>Подкасты</li>
-                    <li>Интервью</li>
-                    <li>Домены в зоне tomsk.ru</li>
-                    <li>Видео</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/tomskru.png' %}" alt="Информационный портал Tomsk.ru" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
-            <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
-                <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
-                <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="tomskru-dots">
-        <span class="dot" onclick="tomskruSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="tomskruSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="tomskruSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="tomskruSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="tomskruSlider.currentSlide(4)"></span>
-    </div>
-    <button class="prev" onclick="tomskruSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="tomskruSlider.changeSlide(1)">&#10095;</button>
-</div>
 <div class="slider" id="radio">
-    <h2 class="slide-title">Радиохолдинг - 14 радиостанций</h2>
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <img src="{% static 'images/radio/Ведущий радио Томск.jpg' %}" alt="Ведущий радио Томск" title="Ведущий радио Томск" class="slide-img">
             <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
+                    <div class="slide-title">
+                        <h2 >Радиохолдинг Дайджест FM</h2>
+                        <p>Основано в 1999 году. Томск.</p>
+                    </div>
+                    <h2>Радиостанции</h2>
+                    <ul>
+                        <li>Радио Monte Carlo 89,5 FM</li>
+                        <li>Comedy Radio 90.3 FM</li>
+                        <li>Love Radio 95,7 FM</li>
+                        <li>Радио Ваня 96.5 FM</li>
+                        <li>Радио Maximum 98,8 FM</li>
+                        <li>Хит FM 101,7 FM</li>
+                        <li>Русское Радио 102,1 FM</li>
+                        <li>DFM 103,8 FM</li>
+                        <li>Юмор FM 104,2 FM</li>
+                        <li>Авторадио 105.4 FM</li>
+                        <li>Радио Energy 106,1 FM</li>
+                        <li>Радио Дача 107,1 FM</li>
+                    </ul>
+                    <div class="page-about">
+                        <a href="https://radio.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                        <button class="page-link" onclick="openModal()">Рассчитать</button>
+                    </div>
+                </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio/Радио онлайн реклама.jpg' %}" loading="lazy" alt="Радио онлайн реклама" title="Радио онлайн реклама" class="slide-img">
+                <div class="slide-text">
+                    <div class="slide-title">
+                        <h2 >Радиохолдинг Дайджест FM</h2>
+                        <p>Основано в 1999 году. Томск.</p>
+                    </div>
+                    <h2>Виды аудиорекламы</h2>
+                    <ul>
+                        <li>Аудио-джинглы</li>
+                        <li>Рекламные ролики на радио</li>
+                        <li>Спонсорские упоминания</li>
+                        <li>Рекламные заставки</li>
+                        <li>Промо-ролики</li>
+                        <li>Анонсы на радио</li>
+                        <li>Музыкальные заставки</li>
+                    </ul>
+
+                    <div class="page-about">
+                        <a href="https://radio.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                        <button class="page-link" onclick="openModal()">Рассчитать</button>
+                    </div>
+                </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/radio/Радио Томск.jpg' %}" loading="lazy" alt='Радио Томск' title='Радио Томск' class="slide-img">
+                <div class="slide-text">
+                    <div class="slide-title">
+                        <h2 >Радиохолдинг Дайджест FM</h2>
+                        <p>Основано в 1999 году. Томск.</p>
+                    </div>
+                    <h2>Услуги</h2>
+                    <ul>
+                        <li>Разработка сценариев</li>
+                        <li>Запись аудио роликов</li>
+                        <li>Подбор голосов</li>
+                        <li>Звуковое оформление</li>
+                        <li>Креативные концепции</li>
+                        <li>Постпродакшн аудио</li>
+                        <li>Озвучивание роликов</li>
+                    </ul>
+                    <div class="page-about">
+                        <a href="https://radio.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                        <button class="page-link" onclick="openModal()">Рассчитать</button>
+                    </div>
+        </div>
+            </div>
+        <div class="slide">
+            <img src="{% static 'images/radio/Радиохолдинг Томск.jpg' %}" loading="lazy" alt='Радиохолдинг Томск' title='Радиохолдинг Томск' class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Радиохолдинг Дайджест FM</h2>
+                    <p>Основано в 1999 году. Томск.</p>
+                </div>
+                <h2>Готовые решения</h2>
                 <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
+                    <li>Реклама на радио для ресторанов</li>
+                    <li>Радиореклама для медицинских учреждений</li>
+                    <li>Аудиореклама для торговых центров</li>
+                    <li>Реклама на радио для автосалонов</li>
+                    <li>Радиореклама для банков</li>
+                    <li>Аудиореклама для фитнес-центров</li>
+                    <li>Реклама на радио для строительных компаний</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                    <a href="https://radio.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <img src="{% static 'images/radio/Реклама на радио Томск.jpg' %}" loading="lazy" alt='Реклама на радио Томск' title='Реклама на радио Томск' class="slide-img">
             <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                <div class="slide-title">
+                    <h2 >Радиохолдинг Дайджест FM</h2>
+                    <p>Основано в 1999 году. Томск.</p>
                 </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
+                <h2>Новые технологии для создания аудиорекламы</h2>
                 <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
+                    <li>AI для создания аудиорекламы</li>
+                    <li>AI для подбора голосов</li>
+                    <li>Создание звука с помощью AI</li>
+                    <li>Генерация музыки с помощью AI</li>
+                    <li>Подкасты, созданные с помощью AI</li>
+                    <li>Автоматизация подкастов с AI</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
-                <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
-            <div class="slide-text">
-                <h2>Школа продаж</h2>
-                <ul>
-                    <li>Аудит и стратегия отдела продаж</li>
-                    <li>Тренинги продаж (от холодных до розничных)</li>
-                    <li>Аудит и стратегия отдела маркетинга</li>
-                    <li>Корпоративная система обучения сотрудников</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                    <a href="https://radio.tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
@@ -751,90 +493,553 @@
     <button class="prev" onclick="radioSlider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="radioSlider.changeSlide(1)">&#10095;</button>
 </div>
-<div class="slider" id="design">
-    <h2 class="slide-title">Отдел дизайна</h2>
+<div class="slider" id="printing">
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <img src="{% static 'images/d-print/Полиграфия  Томск.jpg' %}"  alt="Полиграфия  Томск" title="Полиграфия  Томск" class="slide-img">
             <div class="slide-text">
-                <h2>Отдел дизайна</h2>
+                <div class="slide-title">
+                    <h2 >Типография Д Принт</h2>
+                    <p >Основана в 1997 году. Томск.</p>
+                </div>
+                <h2>Полиграфические услуги </h2>
                 <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
+                    <li>Офсетная печать</li>
+                    <li>Цифровая печать</li>
+                    <li>Широкоформатная</li>
+                    <li>Сублимационная</li>
+                    <li>Ламирование</li>
+                    <li>Фольгирование</li>
+                    <li>УФ-печать</li>
+                    <li>Переплет</li>
+                    <li>Гравюра</li>
+                </ul>
+                <div class="page-about">
+                    <a href="https://rde.tomsk.ru/services/poligraphy/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/d-print/Типография Буклеты.jpg' %}" loading="lazy" alt="Типография Буклеты" title="Типография Буклеты" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Типография Д Принт</h2>
+                    <p >Основана в 1997 году. Томск.</p>
+                </div>
+                <h2>Полиграфическая продукция </h2>
+                <ul>
+                    <li>Афиши</li>
+                    <li>Визитки</li>
+                    <li>Листовки</li>
                     <li>Книги</li>
                     <li>Буклеты</li>
-                    <li>Логотипы</li>
+                    <li>Каталоги</li>
+                    <li>Журналы</li>
+                    <li>Календари</li>
+                    <li>Брошюра</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                    <a href="https://rde.tomsk.ru/services/poligraphy/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <img src="{% static 'images/d-print/Типография Листовки.jpg' %}" loading="lazy" alt='Типография Листовки' title='Типография Листовки' class="slide-img">
             <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
+                <div class="slide-title">
+                    <h2 >Типография Д Принт</h2>
+                    <p >Основана в 1997 году. Томск.</p>
+                </div>
+                <h2>Полиграфическая продукция </h2>
                 <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
+                    <li>Бланки</li>
+                    <li>Наклейки</li>
+                    <li>Этикетки</li>
+                    <li>Плакаты</li>
+                    <li>Упаковка</li>
+                    <li>Тиснение</li>
+                    <li>Штампы</li>
+                    <li>Лакирование</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                    <a href="https://rde.tomsk.ru/services/poligraphy/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <img src="{% static 'images/d-print/Типография Томск Визитки.jpg' %}" loading="lazy" alt='Типография Томск Визитки' title='Типография Томск Визитки' class="slide-img">
             <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
+                <div class="slide-title">
+                    <h2 >Типография Д Принт</h2>
+                    <p >Основана в 1997 году. Томск.</p>
+                </div>
+                <h2>Дополнительные услуги</h2>
                 <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
+                    <li>Дизайн</li>
+                    <li>Верстка</li>
+                    <li>Переплет</li>
+                    <li>Корректор</li>
+                    <li>Редактор</li>
+                    <li>Упаковка</li>
+                    <li>Доставка</li>
+                    <li>Услуги печати</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                    <a href="https://rde.tomsk.ru/services/poligraphy/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <img src="{% static 'images/d-print/Типография Томск Вакансии.jpg' %}" loading="lazy" alt='Типография Томск Вакансии' title='Типография Томск Вакансии' class="slide-img">
             <div class="slide-text">
-                <h2>Школа продаж</h2>
+                <div class="slide-title">
+                    <h2 >Типография Д Принт</h2>
+                    <p >Основана в 1997 году. Томск.</p>
+                </div>
+                <h2>Специальная  продукция</h2>
                 <ul>
-                    <li>Аудит и стратегия отдела продаж</li>
-                    <li>Тренинги продаж (от холодных до розничных)</li>
-                    <li>Аудит и стратегия отдела маркетинга</li>
-                    <li>Корпоративная система обучения сотрудников</li>
+                    <li>Корпоративная полиграфия</li>
+                    <li>Печать для бизнеса</li>
+                    <li>Рекламная полиграфия</li>
+                    <li>Печать для мероприятий</li>
+                    <li>Полиграфия для стартапов</li>
+                    <li>Полиграфия для магазинов</li>
+                    <li>Печать для ресторанов</li>
+                    <li>Полиграфия для школ и университетов</li>
+                    <li>Печать приглашений</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                    <a href="https://rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="printing-dots">
+        <span class="dot" onclick="printingSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="printingSlider.currentSlide(4)"></span>
+    </div>
+    <button class="prev" onclick="printingSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="printingSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="souvenir">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/souvenir/Томские сувениры.jpg' %}" alt="Томские сувениры" title="Томские сувениры" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Первая сувенирная компания</h2>
+                    <p>Основано в 1999 году. Томск</p>
+                </div>
+                <h2>Услуги</h2>
+                <ul>
+                    <li>Дизайн сувенирной продукции</li>
+                    <li>Нанесение логотипов</li>
+                    <li>Печать на сувенирах</li>
+                    <li>Упаковка сувениров</li>
+                    <li>Доставка сувениров</li>
+                    <li>Креативные концепции</li>
+                    <li>Разработка макетов</li>
+                    <li>Маркировка продукции</li>
+                    <li>Лазерная гравировка</li>
+                    <li>Тиснение</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://suvenir-tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <img src="{% static 'images/souvenir/Сувениры.jpg' %}" loading="lazy" alt="Сувениры" title="Сувениры" class="slide-img">
             <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <div class="slide-title">
+                    <h2 >Первая сувенирная компания</h2>
+                    <p>Основано в 1999 году. Томск</p>
+                </div>
+                <h2>Виды сувенирной продукции</h2>
                 <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
+                    <li>Ручки с логотипом</li>
+                    <li>Кружки с логотипом</li>
+                    <li>Блокноты с логотипом</li>
+                    <li>Футболки с логотипом</li>
+                    <li>Брелоки с логотипом</li>
+                    <li>Флешки с логотипом</li>
+                    <li>Ежедневники с логотипом</li>
+                    <li>Календари с логотипом</li>
+                    <li>Сумки с логотипом</li>
+                    <li>Пазлы с логотипом</li>
+                </ul>
+
+                <div class="page-about">
+                    <a href="http://suvenir-tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir/Сувениры Томск.jpg' %}" loading="lazy" alt='Сувениры Томск' title='Сувениры Томск' class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Первая сувенирная компания</h2>
+                    <p>Основано в 1999 году. Томск</p>
+                </div>
+                <h2>Виды сувенирной продукции</h2>
+                <ul>
+                    <li>Часы с логотипом</li>
+                    <li>Значки с логотипом</li>
+                    <li>Плакаты и постеры</li>
+                    <li>Эко-сувениры</li>
+                    <li>Детские сувениры</li>
+                    <li>Товары для отдыха</li>
+                    <li>Новогодние сувениры</li>
+                    <li>Пасхальные сувениры</li>
+                    <li>Подарки на День Святого Валентина</li>
+                </ul>
+
+                <div class="page-about">
+                    <a href="http://suvenir-tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir/Купить сувениры Томск.jpg' %}" loading="lazy" alt='Купить сувениры Томск' title='Купить сувениры Томск' class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Первая сувенирная компания</h2>
+                    <p>Основано в 1999 году. Томск</p>
+                </div>
+                <h2>Готовые решения</h2>
+                <ul>
+                    <li>Сувенирная продукция для бизнеса</li>
+                    <li>Корпоративные подарки</li>
+                    <li>Сувениры для мероприятий</li>
+                    <li>Промо-сувениры для выставок</li>
+                    <li>Подарки для сотрудников</li>
+                    <li>Сувениры для клиентов</li>
+                    <li>Сувенирная продукция для рекламных акций</li>
+                    <li>Подарки для партнеров</li>
+                    <li>Сувениры для B2C</li>
+                </ul>
+
+                <div class="page-about">
+                    <a href="http://suvenir-tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/souvenir/Что подарить.jpg' %}" loading="lazy" alt='Что подарить' title='Что подарить' class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Первая сувенирная компания</h2>
+                    <p>Основано в 1999 году. Томск</p>
+                </div>
+                <h2>Инновации в производстве сувенирной продукции</h2>
+                <ul>
+                    <li>Цифровая печать на сувенирах</li>
+                    <li>Использование AI для дизайна сувениров</li>
+                    <li>Инновации в производстве сувениров</li>
+                    <li>Новые технологии в создании сувениров</li>
+                    <li>Персонализация сувениров с использованием AI</li>
+                    <li>3D-печать сувениров</li>
+                    <li>Экологичные материалы для сувениров</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://suvenir-tomsk.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="souvenir-dots">
+        <span class="dot" onclick="souvenirSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="souvenirSlider.currentSlide(4)"></span>
+    </div>
+    <button class="prev" onclick="souvenirSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="souvenirSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="magazine">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/magazine/Глянцевый журнал.jpg' %}" alt="Глянцевый журнал" title="Глянцевый журнал" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Журнал "Дорогое удовольствие"</h2>
+                    <p>Основан в 2007 году. Томск.</p>
+                    <h2 >Журнал "The MOCТ"</h2>
+                    <p>Основан в 2021 году. Томск.</p>
+                </div>
+                <h2>Содержание</h2>
+                <ul>
+                    <li>Новости</li>
+                    <li>Статьи</li>
                     <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
+                    <li>Обзоры</li>
+                    <li>Фотосессии</li>
+                    <li>Советы</li>
+                    <li>Колонки экспертов</li>
+                    <li>Репортажи</li>
                 </ul>
                 <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                    <a href="https://dorogoe.tomsk.ru/" class="page-link">Дорогое удовольствие</a>
+                    <a href="https://themost.online/" class="page-link">The MOCТ</a>
+                </div>
+                <div class="page-about">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine/Глянцевый журнал.jpg' %}" alt="Глянцевый журнал" title="Глянцевый журнал" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Журнал "Дорогое удовольствие"</h2>
+                    <p>Основан в 2007 году. Томск.</p>
+                    <h2 >Журнал "The MOCТ"</h2>
+                    <p>Основан в 2021 году. Томск.</p>
+                </div>
+                <h2>Тематика</h2>
+                <ul>
+                    <li>Мода</li>
+                    <li>Красота</li>
+                    <li>Здоровье</li>
+                    <li>Путешествия</li>
+                    <li>Культура</li>
+                    <li>Технологии</li>
+                    <li>Стиль жизни</li>
+                    <li>Лайфстайл</li>
+                </ul>
+                <div class="page-about">
+                    <a href="https://dorogoe.tomsk.ru/" class="page-link">Дорогое удовольствие</a>
+                    <a href="https://themost.online/" class="page-link">The MOCТ</a>
+                </div>
+                <div class="page-about">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine/Глянцевый журнал.jpg' %}" alt="Глянцевый журнал" title="Глянцевый журнал" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Журнал "Дорогое удовольствие"</h2>
+                    <p>Основан в 2007 году. Томск.</p>
+                    <h2 >Журнал "The MOCТ"</h2>
+                    <p>Основан в 2021 году. Томск.</p>
+                </div>
+                <h2>Услуги и предложения</h2>
+                <ul>
+                    <li>Подписка на журнал</li>
+                    <li>Покупка номеров</li>
+                    <li>Рекламные возможности</li>
+                    <li>Сотрудничество</li>
+                    <li>Спецпредложения</li>
+                    <li>Подарочные сертификаты</li>
+                    <li>Акции и скидки</li>
+                    <li>Рекламные кампании</li>
+                </ul>
+                <div class="page-about">
+                    <a href="https://dorogoe.tomsk.ru/" class="page-link">Дорогое удовольствие</a>
+                    <a href="https://themost.online/" class="page-link">The MOCТ</a>
+                </div>
+                <div class="page-about">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine/Глянцевый журнал.jpg' %}" alt="Глянцевый журнал" title="Глянцевый журнал" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Журнал "Дорогое удовольствие"</h2>
+                    <p>Основан в 2007 году. Томск.</p>
+                    <h2 >Журнал "The MOCТ"</h2>
+                    <p>Основан в 2021 году. Томск.</p>
+                </div>
+                <h2>Рекламные возможности</h2>
+                <ul>
+                    <li>Размещение рекламы в журнале</li>
+                    <li>Спонсорские страницы</li>
+                    <li>Брендированный контент</li>
+                    <li>Рекламные статьи</li>
+                    <li>Баннерная реклама на сайте</li>
+                    <li>Персонализированные обложки</li>
+                    <li>Партнерские программы</li>
+                    <li>Коллаборации с брендами</li>
+                    <li>Совместные проекты</li>
+                </ul>
+                <div class="page-about">
+                    <a href="https://dorogoe.tomsk.ru/" class="page-link">Дорогое удовольствие</a>
+                    <a href="https://themost.online/" class="page-link">The MOCТ</a>
+                </div>
+                <div class="page-about">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/magazine/Глянцевый журнал.jpg' %}" alt="Глянцевый журнал" title="Глянцевый журнал" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Журнал "Дорогое удовольствие"</h2>
+                    <p>Основан в 2007 году. Томск.</p>
+                    <h2 >Журнал "The MOCТ"</h2>
+                    <p>Основан в 2021 году. Томск.</p>
+                </div>
+                <h2>Мероприятия и ивенты</h2>
+                <ul>
+                    <li>Организация ивентов</li>
+                    <li>Встречи с авторами</li>
+                    <li>Выставки и презентации</li>
+                    <li>Тематические вечеринки</li>
+                </ul>
+                <div class="page-about">
+                    <a href="https://dorogoe.tomsk.ru/" class="page-link">Дорогое удовольствие</a>
+                    <a href="https://themost.online/" class="page-link">The MOCТ</a>
+                </div>
+                <div class="page-about">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dots-container"  id="magazine-dots">
+        <span class="dot" onclick="magazineSlider.currentSlide(0)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(1)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(2)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(3)"></span>
+        <span class="dot" onclick="magazineSlider.currentSlide(4)"></span>
+    </div>
+    <button class="prev" onclick="magazineSlider.changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="magazineSlider.changeSlide(1)">&#10095;</button>
+</div>
+<div class="slider" id="design">
+    <div class="slider-wrapper">
+        <div class="slide">
+            <img src="{% static 'images/design/Design.jpg' %}" alt="Design" title="Design" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Отдел дизайна</h2>
+                    <p>Основан в 1994 году. Томск. </p>
+                </div>
+                <h2>Услуги</h2>
+                <ul>
+                    <li>Графический дизайн</li>
+                    <li>Создание логотипов</li>
+                    <li>Дизайн баннеров</li>
+                    <li>Полиграфический дизайн</li>
+                    <li>Дизайн наружной рекламы</li>
+                    <li>Создание фирменного стиля</li>
+                    <li>Брендирование</li>
+                    <li>Веб-дизайн</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://design.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design/Design.jpg' %}" alt="Design" title="Design" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Отдел дизайна</h2>
+                    <p>Основан в 1994 году. Томск. </p>
+                </div>
+                <h2>Услуги</h2>
+                <ul>
+                    <li>Дизайн презентаций</li>
+                    <li>Анимация</li>
+                    <li>Редизайн</li>
+                    <li>Дизайн сайтов</li>
+                    <li>UX/UI дизайн</li>
+                    <li>Создание иллюстраций</li>
+                    <li>Упаковка</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://design.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design/Design.jpg' %}" alt="Design" title="Design" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Отдел дизайна</h2>
+                    <p>Основан в 1994 году. Томск. </p>
+                </div>
+                <h2>Специальные услуги</h2>
+                <ul>
+                    <li>Дизайн брошюр</li>
+                    <li>Дизайн каталогов</li>
+                    <li>Дизайн афиш</li>
+                    <li>Дизайн постеров</li>
+                    <li>Дизайн приглашений</li>
+                    <li>Дизайн баннеров для выставок</li>
+                    <li>Дизайн стендов</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://design.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design/Design.jpg' %}" alt="Design" title="Design" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Отдел дизайна</h2>
+                    <p>Основан в 1994 году. Томск. </p>
+                </div>
+                <h2>Специальные услуги</h2>
+                <ul>
+                    <li>Профессиональная фотосъемка</li>
+                    <li>Ретушь изображений</li>
+                    <li>Фотоманипуляция</li>
+                    <li>Корпоративный стиль</li>
+                    <li>Дизайн карточек товаров</li>
+                    <li>Дизайн рассылок</li>
+                    <li>Дизайн билетов</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://design.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="{% static 'images/design/Design.jpg' %}" alt="Design" title="Design" class="slide-img">
+            <div class="slide-text">
+                <div class="slide-title">
+                    <h2 >Отдел дизайна</h2>
+                    <p>Основан в 1994 году. Томск. </p>
+                </div>
+                <h2>Инновации в дизайне</h2>
+                <ul>
+                    <li>Цифровой дизайн</li>
+                    <li>Использование AI в дизайне</li>
+                    <li>Интерактивный дизайн</li>
+                    <li>Виртуальная реальность в дизайне</li>
+                    <li>Адаптивный дизайн</li>
+                    <li>Инновационные технологии в дизайне</li>
+                    <li>Автоматизация дизайна</li>
+                </ul>
+                <div class="page-about">
+                    <a href="http://design.rde.ru/" class="page-link">Перейти на сайт</a>
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
@@ -851,89 +1056,136 @@
     <button class="next" onclick="designSlider.changeSlide(1)">&#10095;</button>
 </div>
 <div class="slider" id="digital">
-    <h2 class="slide-title">Диджитал-агентство</h2>
     <div class="slider-wrapper">
         <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
+            <img src="{% static 'images/digital/Digital.jpg' %}" alt="Digital" title="Digital" class="slide-img">
             <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
+                <div class="slide-title">
+                    <h2 >Диджитал отдел</h2>
+                    <p>Основан 1997 году.</p>
+                </div>
+                <h2>SEO</h2>
                 <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
+                    <li>Поисковая оптимизация</li>
+                    <li>Продвижение сайтов</li>
+                </ul>
+                <h2>SMM</h2>
+                <ul>
+                    <li>Маркетинг в социальных сетях</li>
+                    <li>Продвижение в соцсетях</li>
+                </ul>
+                <h2>Контекстная реклама</h2>
+                <ul>
+                    <li>Google Ads</li>
+                    <li>Яндекс.Директ</li>
                 </ul>
                 <div class="page-about">
                     <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
+            <img src="{% static 'images/digital/Digital.jpg' %}" alt="Digital" title="Digital" class="slide-img">
             <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
+                <div class="slide-title">
+                    <h2 >Диджитал отдел</h2>
+                    <p>Основан 1997 году.</p>
+                </div>
+                <h2>Веб-дизайн</h2>
                 <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
+                    <li>Дизайн сайтов</li>
+                    <li>UX/UI дизайн</li>
+                </ul>
+                <h2>Создание сайтов</h2>
+                <ul>
+                    <li>Разработка сайтов</li>
+                    <li>Лэндинг пейдж</li>
+                </ul>
+                <h2>Email-маркетинг</h2>
+                <ul>
+                    <li>Рассылка писем</li>
+                    <li>Автоматизация email-маркетинга</li>
                 </ul>
                 <div class="page-about">
                     <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
+            <img src="{% static 'images/digital/Digital.jpg' %}" alt="Digital" title="Digital" class="slide-img">
             <div class="slide-text">
-                <h2>Школа продаж</h2>
+                <div class="slide-title">
+                    <h2 >Диджитал отдел</h2>
+                    <p>Основан 1997 году.</p>
+                </div>
+                <h2>Аналитика</h2>
                 <ul>
-                    <li>Аудит и стратегия отдела продаж</li>
-                    <li>Тренинги продаж (от холодных до розничных)</li>
-                    <li>Аудит и стратегия отдела маркетинга</li>
-                    <li>Корпоративная система обучения сотрудников</li>
+                    <li>Веб-аналитика</li>
+                    <li>Анализ трафика</li>
+                </ul>
+                <h2>Аудит сайтов</h2>
+                <ul>
+                    <li>SEO аудит</li>
+                    <li>Технический аудит</li>
+                </ul>
+                <h2>Разработка мобильных приложений</h2>
+                <ul>
+                    <li>Создание приложений</li>
+                    <li>Мобильная разработка</li>
                 </ul>
                 <div class="page-about">
                     <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
+            <img src="{% static 'images/digital/Digital.jpg' %}" alt="Digital" title="Digital" class="slide-img">
             <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
+                <div class="slide-title">
+                    <h2 >Диджитал отдел</h2>
+                    <p>Основан 1997 году.</p>
+                </div>
+                <h2>Контент-маркетинг</h2>
                 <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
+                    <li>Создание контента</li>
+                    <li>Копирайтинг</li>
+                    <li>Видеоконтент</li>
+                </ul>
+                <h2>Брендинг</h2>
+                <ul>
+                    <li>Разработка фирменного стиля</li>
+                    <li>Создание логотипа</li>
+                    <li>Нейминг</li>
+                    <li>Позиционирование бренда</li>
                 </ul>
                 <div class="page-about">
                     <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
         <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
+            <img src="{% static 'images/digital/Digital.jpg' %}" alt="Digital" title="Digital" class="slide-img">
             <div class="slide-text">
-                <h2>Отдел дизайна</h2>
+                <div class="slide-title">
+                    <h2 >Диджитал отдел</h2>
+                    <p>Основан 1997 году.</p>
+                </div>
+                <h2>Инновации в диджитал маркетинге</h2>
                 <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
+                    <li>Использование AI в маркетинге</li>
+                    <li>Машинное обучение в диджитал маркетинге</li>
+                    <li>Автоматизация маркетинга</li>
+                    <li>Интерактивный контент</li>
+                    <li>Виртуальная реальность в маркетинге</li>
+                    <li>Персонализация маркетинговых кампаний</li>
                 </ul>
                 <div class="page-about">
                     <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
+                    <button class="page-link" onclick="openModal()">Рассчитать</button>
                 </div>
             </div>
         </div>
@@ -948,204 +1200,7 @@
     <button class="prev" onclick="digitalSlider.changeSlide(-1)">&#10094;</button>
     <button class="next" onclick="digitalSlider.changeSlide(1)">&#10095;</button>
 </div>
-<div class="slider" id="art">
-    <h2 class="slide-title">Отдел прикладного искусства</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
-                <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
-            <div class="slide-text">
-                <h2>Школа продаж</h2>
-                <ul>
-                    <li>Аудит и стратегия отдела продаж</li>
-                    <li>Тренинги продаж (от холодных до розничных)</li>
-                    <li>Аудит и стратегия отдела маркетинга</li>
-                    <li>Корпоративная система обучения сотрудников</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
-            <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
-                <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="art-dots">
-        <span class="dot" onclick="artSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="artSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="artSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="artSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="artSlider.currentSlide(4)"></span>
 
-    </div>
-    <button class="prev" onclick="artSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="artSlider.changeSlide(1)">&#10095;</button>
-</div>
-<div class="slider" id="shcool">
-    <h2 class="slide-title">Школа продаж</h2>
-    <div class="slider-wrapper">
-        <div class="slide">
-            <img src="{% static 'images/shcool.jpeg' %}" alt="Школа продаж" class="slide-img">
-            <div class="slide-text">
-                <h2>Школа продаж</h2>
-                <ul>
-                    <li>Аудит и стратегия отдела продаж</li>
-                    <li>Тренинги продаж (от холодных до розничных)</li>
-                    <li>Аудит и стратегия отдела маркетинга</li>
-                    <li>Корпоративная система обучения сотрудников</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/school.png' %}" alt="Школа продаж" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/radio.jpeg' %}" alt="Радиохолдинг" class="slide-img">
-            <div class="slide-text">
-                <h2>Радиохолдинг - 14 радиостанций</h2>
-                <ul>
-                    <li>Продакшн-студия</li>
-                    <li>Ролики</li>
-                    <li>Интервью</li>
-                    <li>Поздравления</li>
-                    <li>Подкасты</li>
-                    <li>Выездная студия</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/fm.png' %}" alt="Радиохолдинг" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/design.jpeg' %}" alt="Отдел дизайна" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел дизайна</h2>
-                <ul>
-                    <li>Полиграфия</li>
-                    <li>Наружная реклама</li>
-                    <li>Книги</li>
-                    <li>Буклеты</li>
-                    <li>Логотипы</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/design.png' %}" alt="Отдел дизайна" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/digital.jpeg' %}" alt="Диджитал-агентство" class="slide-img">
-            <div class="slide-text">
-                <h2>Диджитал-агентство</h2>
-                <ul>
-                    <li>Аудит</li>
-                    <li>Разработка сайтов, посадочных страниц</li>
-                    <li>Настройка рекламы</li>
-                    <li>Исследования ЦА</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/agency.png' %}" alt="Диджитал-агентство" class="page-logo">
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'images/tomskru.jpeg' %}" alt="Отдел прикладного искусства" class="slide-img">
-            <div class="slide-text">
-                <h2>Отдел прикладного искусства</h2>
-                <ul>
-                    <li>Томская лошадка</li>
-                    <li>Нестандартные изделия из дерева</li>
-                    <li>Сувениры ручной работы</li>
-                    <li>Поддоны и упаковка</li>
-                    <li>Мастер-классы и обучение</li>
-                </ul>
-                <div class="page-about">
-                    <a href="http://adress.ru" class="page-link">Перейти на сайт</a>
-                    <img src="{% static 'logo/wooden%20horse.png' %}" alt="Отдел прикладного искусства" class="page-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="dots-container"  id="shcool-dots">
-        <span class="dot" onclick="shcoolSlider.currentSlide(0)"></span>
-        <span class="dot" onclick="shcoolSlider.currentSlide(1)"></span>
-        <span class="dot" onclick="shcoolSlider.currentSlide(2)"></span>
-        <span class="dot" onclick="shcoolSlider.currentSlide(3)"></span>
-        <span class="dot" onclick="shcoolSlider.currentSlide(4)"></span>
-
-    </div>
-    <button class="prev" onclick="shcoolSlider.changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="shcoolSlider.changeSlide(1)">&#10095;</button>
-</div>
 <section class="form-section">
     <div class="form-container">
         <h2>Задайте свой вопрос!</h2>
@@ -1163,137 +1218,143 @@
 <div id="contactModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <div class="form-container">
-            <h2>Задайте свой вопрос!</h2>
-            <p>Для получения ответа заполните, пожалуйста, форму обратной связи</p>
+        <div class="modal-container">
             <form action="#">
                 <input type="text" placeholder="Имя" required>
                 <input type="tel" placeholder="Тел. +7 (XXX) XXX XX XX" required>
-                <textarea placeholder="Вопрос" required></textarea>
+                <textarea placeholder="Вопрос или заказать звонок" required></textarea>
                 <button type="submit">Отправить</button>
             </form>
             <p class="form-footer">Нажимая на кнопку отправить Вы соглашаетесь на обработку персональных данных</p>
         </div>
     </div>
 </div>
-<!--<script>
-    // Функции для открытия и закрытия модального окна
 
+<script>
+    function Slider(sliderId, dotsContainerId) {
+        this.currentSlideIndex = 1;
+        this.sliderWrapper = document.querySelector(`#${sliderId} .slider-wrapper`);
+        this.slides = document.querySelectorAll(`#${sliderId} .slide`);
+        this.dots = document.querySelectorAll(`#${dotsContainerId} .dot`);
+        this.touchStartX = 0;
+        this.touchEndX = 0;
 
-    let currentSlide = 0;
+        // Clone first and last slide
+        const firstSlide = this.slides[0].cloneNode(true);
+        const lastSlide = this.slides[this.slides.length - 1].cloneNode(true);
 
-    function changeSlide(direction) {
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.getElementsByClassName('dot');
-        currentSlide += direction;
-        console.log('direction:', direction);
-        console.log('currentSlide:', currentSlide);
-        console.log('slides.length:', slides.length);
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
-        } else if (currentSlide < 0) {
-            currentSlide = slides.length - 1;
-        }
+        // Append cloned slides
+        this.sliderWrapper.appendChild(firstSlide);
+        this.sliderWrapper.insertBefore(lastSlide, this.sliderWrapper.firstChild);
 
-        const sliderWrapper = document.querySelector('.slider-wrapper');
-        sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+        this.slides = document.querySelectorAll(`#${sliderId} .slide`);
+        this.totalSlides = this.slides.length;
+
+        // Move to the first actual slide
+        this.sliderWrapper.style.transform = `translateX(-100%)`;
+
+        this.changeSlide = (direction) => {
+            this.currentSlideIndex += direction;
+            this.sliderWrapper.style.transition = 'transform 0.5s ease';
+            this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+
+            // Handle wrapping
+            setTimeout(() => {
+                if (this.currentSlideIndex >= this.totalSlides - 1) {
+                    this.currentSlideIndex = 1;
+                    this.sliderWrapper.style.transition = 'none';
+                    this.sliderWrapper.style.transform = `translateX(-100%)`;
+                } else if (this.currentSlideIndex <= 0) {
+                    this.currentSlideIndex = this.totalSlides - 2;
+                    this.sliderWrapper.style.transition = 'none';
+                    this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+                }
+            }, 500);
+
+            this.updateDots();
+        };
+
+        this.currentSlide = (n) => {
+            this.currentSlideIndex = n + 1;
+            this.sliderWrapper.style.transition = 'transform 0.5s ease';
+            this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
+            this.updateDots();
+        };
+
+        this.updateDots = () => {
+            this.dots.forEach(dot => dot.classList.remove('active'));
+            let dotIndex = this.currentSlideIndex - 1;
+            if (dotIndex >= this.dots.length) {
+                dotIndex = 0;
+            } else if (dotIndex < 0) {
+                dotIndex = this.dots.length - 1;
+            }
+            this.dots[dotIndex].classList.add('active');
+        };
+
+        this.handleTouchStart = (event) => {
+            this.touchStartX = event.changedTouches[0].screenX;
+        };
+
+        this.handleTouchEnd = (event) => {
+            this.touchEndX = event.changedTouches[0].screenX;
+            this.handleGesture();
+        };
+
+        this.handleGesture = () => {
+            if (this.touchEndX < this.touchStartX) {
+                this.changeSlide(1);
+            } else if (this.touchEndX > this.touchStartX) {
+                this.changeSlide(-1);
+            }
+        };
+
+        this.handleMouseDown = (event) => {
+            this.touchStartX = event.clientX;
+        };
+
+        this.handleMouseUp = (event) => {
+            this.touchEndX = event.clientX;
+            this.handleGesture();
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            this.dots[0].classList.add('active');
+        });
+
+        this.sliderWrapper.addEventListener('touchstart', this.handleTouchStart);
+        this.sliderWrapper.addEventListener('touchend', this.handleTouchEnd);
+        this.sliderWrapper.addEventListener('mousedown', this.handleMouseDown);
+        this.sliderWrapper.addEventListener('mouseup', this.handleMouseUp);
     }
 
-</script>-->
-<script> function Slider(sliderId, dotsContainerId) {
-    this.currentSlideIndex = 0;
-    this.sliderWrapper = document.querySelector(`#${sliderId} .slider-wrapper`);
-    this.slides = document.querySelectorAll(`#${sliderId} .slide`);
-    this.dots = document.querySelectorAll(`#${dotsContainerId} .dot`);
-    this.touchStartX = 0;
-    this.touchEndX = 0;
+    const bannerSlider = new Slider('banner-slider', 'banner-dots');
+    const agencySlider = new Slider('agency', 'agency-dots');
+    const billboardSlider = new Slider('billboard', 'billboard-dots');
+    const radioSlider = new Slider('radio', 'radio-dots');
+    const printingSlider = new Slider('printing', 'printing-dots');
+    const souvenirSlider = new Slider('souvenir', 'souvenir-dots');
+    const magazineSlider = new Slider('magazine', 'magazine-dots');
+    const designSlider = new Slider('design', 'design-dots');
+    const digitalSlider = new Slider('digital', 'digital-dots');
 
-    this.changeSlide = (direction) => {
-        this.currentSlideIndex += direction;
-
-        if (this.currentSlideIndex >= this.slides.length) {
-            this.currentSlideIndex = 0;
-        } else if (this.currentSlideIndex < 0) {
-            this.currentSlideIndex = this.slides.length - 1;
-        }
-
-        this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
-        this.updateDots();
-    };
-
-    this.currentSlide = (n) => {
-        this.currentSlideIndex = n;
-        this.sliderWrapper.style.transform = `translateX(-${this.currentSlideIndex * 100}%)`;
-        this.updateDots();
-    };
-
-    this.updateDots = () => {
-        this.dots.forEach(dot => dot.classList.remove('active'));
-        this.dots[this.currentSlideIndex].classList.add('active');
-    };
-
-    this.handleTouchStart = (event) => {
-        this.touchStartX = event.changedTouches[0].screenX;
-    };
-
-    this.handleTouchEnd = (event) => {
-        this.touchEndX = event.changedTouches[0].screenX;
-        this.handleGesture();
-    };
-
-    this.handleGesture = () => {
-        if (this.touchEndX < this.touchStartX) {
-            this.changeSlide(1);
-        } else if (this.touchEndX > this.touchStartX) {
-            this.changeSlide(-1);
-        }
-    };
-
-    this.handleMouseDown = (event) => {
-        this.touchStartX = event.clientX;
-    };
-
-    this.handleMouseUp = (event) => {
-        this.touchEndX = event.clientX;
-        this.handleGesture();
-    };
-
-    document.addEventListener('DOMContentLoaded', () => {
-        this.dots[this.currentSlideIndex].classList.add('active');
-    });
-    this.sliderWrapper.addEventListener('touchstart', this.handleTouchStart);
-    this.sliderWrapper.addEventListener('touchend', this.handleTouchEnd);
-    this.sliderWrapper.addEventListener('mousedown', this.handleMouseDown);
-    this.sliderWrapper.addEventListener('mouseup', this.handleMouseUp);
-}
-
-const bannerSlider = new Slider('banner-slider', 'banner-dots');
-const agencySlider = new Slider('agency', 'agency-dots');
-const printingSlider = new Slider('printing', 'printing-dots');
-const billboardSlider = new Slider('billboard', 'billboard-dots');
-const magazineSlider = new Slider('magazine', 'magazine-dots');
-const souvenirSlider = new Slider('souvenir', 'souvenir-dots');
-const tomskruSlider = new Slider('tomskru', 'tomskru-dots');
-const radioSlider = new Slider('radio', 'radio-dots');
-const designSlider = new Slider('design', 'design-dots');
-const digitalSlider = new Slider('digital', 'digital-dots');
-const artSlider = new Slider('art', 'art-dots');
-const shcoolSlider = new Slider('shcool', 'shcool-dots');
-function openModal() {
-    document.getElementById('contactModal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('contactModal').style.display = 'none';
-}
-
-// Закрытие модального окна при клике вне его
-window.onclick = function(event) {
-    const modal = document.getElementById('contactModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    function openModal() {
+        document.getElementById('contactModal').style.display = 'block';
     }
-}
+
+    function closeModal() {
+        document.getElementById('contactModal').style.display = 'none';
+    }
+
+    // Закрытие модального окна при клике вне его
+    window.onclick = function(event) {
+        const modal = document.getElementById('contactModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+
 </script>
 <script src="{% static 'scroll.js' %}"></script>
 {% endblock %}

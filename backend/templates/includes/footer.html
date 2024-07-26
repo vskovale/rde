@@ -7,33 +7,22 @@
         </div>
         <div class="footer__social">
             <a href="#"><img src="{% static 'logo/whatsapp-icon.png' %}" alt="WhatsApp"></a>
-            <a href="#"><img src="{% static 'logo/vk-icon.png' %}" alt="VK"></a>
+            <a href="https://vk.com/rdetomsk"><img src="{% static 'logo/vk-icon.png' %}" alt="VK"></a>
         </div>
     </div>
     <div class="footer__columns">
          <div class="footer__column">
-            <h3>Рекламные услуги</h3>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('printing')">Полиграфический комплекс</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал</a></li>
-            </ul>
-            <h3>Медиа и публикации</h3>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('magazine')">Журналы</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('tomskru')">Tomsk.ru</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('radio')">Радиохолдинг</a></li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <h3>Дизайн и производство</h3>
-            <ul>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Производство сувениров</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('art')">Прикладное искусство</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToSection('shcool')">Школа продаж</a></li>
-            </ul>
+            <h3>Услуги</h3>
+             <ul>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('agency')">Агентство</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('billboard')">Наружная реклама</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('radio')">Радио</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('printing')">Типография</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('souvenir')">Сувениры</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('magazine')">Журналы</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('design')">Дизайн</a></li>
+                 <li><a href="javascript:void(0);" onclick="scrollToSection('digital')">Диджитал</a></li>
+             </ul>
         </div>
         <div class="footer__column">
             <h3>Контакты</h3>
@@ -43,8 +32,7 @@
                 г. Томск, ул. Герцена, 72 б<br>
                 <br>
                 Мы работаем:<br>
-                пн - пт 9.00 - 18.00<br>
-                сб, вс - выходной<br>
+                Круглосуточно<br>
                 <br>
                 <strong>Телефон:</strong> 8 (3822) 52 10 01<br>
                 <strong>Email:</strong> <a href="mailto:reklama@rde.ru">reklama@rde.ru</a><br>
@@ -52,6 +40,61 @@
             </address>
         </div>
         <div class="footer__column">
+            <script type="text/javascript"
+                    charset="utf-8"
+                    async
+                    src="https://api-maps.yandex.ru/2.1/?apikey=d5a88613-6fb4-4358-826a-43328e091666&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+            <div id="map_container" class="map" onclick="loadYandexMap()"></div>
+
+            <script async>
+                let map_container = document.getElementById('map_container');
+                let options_map = {
+                    once: true,
+                    passive: true,
+                    capture: true
+                };
+                map_container.addEventListener('click', loadYandexMap, options_map);
+                map_container.addEventListener('mouseover', loadYandexMap, options_map);
+                map_container.addEventListener('touchstart', loadYandexMap, options_map);
+                map_container.addEventListener('touchmove', loadYandexMap, options_map);
+
+                let mapLoaded = false;
+
+                function loadYandexMap() {
+                    if (mapLoaded) return;
+
+                    var mapContainer = document.getElementById('map_container');
+                    mapContainer.innerHTML = '<div id="map" style="width: 100%; height: 100%;"></div>';
+                    mapContainer.style.backgroundImage = 'none';
+
+                    var script = document.createElement('script');
+                    script.src = "https://api-maps.yandex.ru/2.1/?apikey=d5a88613-6fb4-4358-826a-43328e091666&load=package.standard&lang=ru-RU";
+                    script.async = true;
+                    script.onload = function () {
+                        ymaps.ready(init);
+                    };
+                    document.body.appendChild(script);
+
+                    mapLoaded = true;
+                }
+
+                function init(){
+                    var myMap = new ymaps.Map("map", {
+                        center: [56.474097, 84.987237],
+                        zoom: 15,
+                        controls: []
+                    });
+
+                    var myPlacemark = new ymaps.Placemark([56.474097, 84.987237], {
+                        hintContent: 'Рекламный дайджест',
+                        balloonContent: 'Рекламный дайджест'
+                    });
+
+                    myMap.geoObjects.add(myPlacemark);
+                }
+
+
+            </script>
             <div class="footer__map">
                 <div id="map" style="width: 250px; height: 250px"></div>
             </div>
@@ -59,23 +102,3 @@
     </div>
     ©2024 «Рекламный дайджест»
 </footer>
-<script src="https://api-maps.yandex.ru/2.0-stable/?apikey=d5a88613-6fb4-4358-826a-43328e091666&load=package.standard&lang=ru-RU" type="text/javascript"></script>
-<script type="text/javascript">
-    ymaps.ready(init);
-    var myMap,
-    myPlacemark;
-
-    function init(){
-        myMap = new ymaps.Map("map", {
-            center: [56.474097, 84.987237],
-            zoom: 19
-        });
-
-        myPlacemark = new ymaps.Placemark([56.474097, 84.987237], {
-            hintContent: 'Москва!',
-            balloonContent: 'Столица России'
-        });
-
-        myMap.geoObjects.add(myPlacemark);
-    }
-</script>

@@ -1,3 +1,7 @@
+html {
+    touch-action: manipulation;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,7 +31,6 @@ header {
     align-items: center; /* Выровнять элементы по вертикали */
 }
 
-
 .header__center {
     flex: 0 0 60%;
     display: flex;
@@ -50,7 +53,7 @@ header {
 }
 
 .header__logo img {
-    max-height: 60px;
+    height: 60px;
     width: auto;
     margin:10px;
 }
@@ -153,6 +156,7 @@ header {
 .header__cta .cta-button:hover {
     background-color: #008c98;
 }
+
 .menu-button {
     display: none; /* Скрываем кнопку меню по умолчанию */
     background-color: #00788a;
@@ -235,11 +239,6 @@ header {
     bottom: 20px;
 }
 
-.scroll-button:hover {
-    background-color: #008c98;
-}
-
-
 #banner {
     position: relative;
     color: white;
@@ -255,10 +254,10 @@ header {
 .banner-text {
     position: absolute;
     left: 75%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    bottom: -60px;
-    padding: 30px; /* Добавляем отступы от краев фона */
+    bottom: 0px;
+    padding: 30px 0 30px 30px; /* Добавляем отступы от краев фона */
     width: 50%;
     box-sizing: border-box; /* Учитываем отступы в ширине */
 }
@@ -279,9 +278,29 @@ header {
     margin:0;
 }
 
-.banner-text p {
+.banner-text h3 {
     font-size: 36px;
     margin: 0;
+}
+.banner-text p {
+    font-size: 20px;
+    margin: 0;
+}
+.banner-text ul {
+    padding-left: 3%;
+    font-size: 20px;
+}
+.banner-text button {
+    bottom:0px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00a6b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for buttons */
+    text-align: center;
 }
 .slider {
     position: relative;
@@ -291,6 +310,7 @@ header {
     height: 100vh;
 }
 
+
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease;
@@ -298,6 +318,7 @@ header {
 
 .slide {
     min-width: 100%;
+    height: 100vh;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -306,7 +327,7 @@ header {
 }
 
 .slide-img {
-    height: 50vh;
+    max-width: 50%;
 }
 
 .slide-text {
@@ -314,29 +335,29 @@ header {
     padding: 20px;
     color: white;
 }
+.slide-text p {
+    padding: 0 0 0 35px;
+}
 .slide-title {
     width: 100%;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: white;
+    font-size: 12px;
+}
+
+.slide-text h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
 }
 .slide-title h2 {
     font-size: 36px;
-    margin: 0 0 20px 0;
 }
-
-
-.slide-text h2 {
-    font-size: 36px;
-    margin: 0 0 20px 0;
-}
-
 .slide-text ul {
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 20px;
     margin: 0 0 20px 0;
     line-height: 1.5;
+    font-size:18px;
 }
 
 .slide-text ul li::before {
@@ -347,31 +368,31 @@ header {
 
 .page-about  {
     display: flex;
+    gap: 20px;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: center;
 }
 
+#magazine .page-about {
+    padding-bottom: 10px;
+    justify-content: flex-start;
+}
 
 .page-about p {
     text-align: center;
     margin: 20px;
 }
 
-.page-about a {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-}
-
 .page-link {
     display: inline-block;
-    margin-right: 20px;
     padding: 10px 20px;
     background-color: #00a6b4;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for buttons */
+    text-align: center;
 }
 
 .page-link:hover {
@@ -396,8 +417,6 @@ header {
     background-color: #008c98;
 }
 
-
-
 .form-section {
     display: flex;
     align-items: center;
@@ -405,7 +424,7 @@ header {
     height: calc(100vh - 90px);
     height: 100vh;
     padding:10px;
-    background-image: url("images/background.jpeg");
+    background-image: url("images/all/background.jpeg");
     background-size: cover;
 }
 
@@ -418,8 +437,18 @@ header {
     text-align: center;
     color: white;
 }
+.modal-container {
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+    color: white;
+}
 
 .form-container h2 {
+    margin-top: 0;
+}
+.modal-container h2 {
     margin-top: 0;
 }
 
@@ -427,8 +456,18 @@ header {
     display: flex;
     flex-direction: column;
 }
+.modal-container form {
+    display: flex;
+    flex-direction: column;
+}
 
 .form-container input, .form-container textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.modal-container input, .modal-container textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: none;
@@ -446,6 +485,19 @@ header {
 }
 
 .form-container button:hover {
+    background-color: #008c98;
+}
+.modal-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a6b4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-container button:hover {
     background-color: #008c98;
 }
 
@@ -472,7 +524,6 @@ header {
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;/* Максимальная ширина модального окна */
@@ -487,6 +538,7 @@ header {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    padding: 5px;
 }
 
 .close:hover,
@@ -588,7 +640,8 @@ header {
     position: relative;
     color: white;
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
+    height: calc(100vh - 80px);
+    padding-top: 80px;
     overflow: hidden;
 }
 
@@ -604,71 +657,132 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0;
+    height: auto;
 }
 
 #banner-slider .slide img {
-    width: 100%;
-    height: 100vh; /* Adjust height as needed */
-    object-fit: cover;
+width: 100%;
+height: calc(100vh - 80px);
+object-fit: cover;
 }
 
 
 
 .dots-container {
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+text-align: center;
+padding: 10px 0;
+position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #FEFEFE;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #FEFEFE;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
 }
 
 .dot:hover, .dot.active {
-    background-color: #66C3D0;
+background-color: #66C3D0;
 }
 
 .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #66C3D0;
-    font-weight: bold;
-    font-size: 48px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    z-index: 10;
-    background-color: transparent;
-    border: none;
-    transform: translateY(-50%);
-    cursor: pointer;
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: #66C3D0;
+font-weight: bold;
+font-size: 48px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+z-index: 10;
+background-color: transparent;
+border: none;
+transform: translateY(-50%);
+cursor: pointer;
 }
 
-.prev {
-    left: 10px;
-}
 
 .next {
-    right: 10px;
+right: 0px;
+}
+.gallery-title {
+text-align: left;
+margin: 150px 0 0 10%;
+font-size: 36px;
+color: white;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+.slider-container-wrapper {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px auto;
+max-width: 1200px;
+overflow: visible; /* Важно для видимости кнопок */
+}
+.slider-container {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px; /* Устанавливает высоту для квадратных изображений */
+    transition: 0.5s ease;
+    margin: 0 10px; /* Расстояние между изображениями */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает квадратное отображение изображений */
+    border-radius: 10px;
+}
+
+.map {
+    width: 300px;
+    height: 300px;
+    background-image: url("{% static 'placeholder.jpg' %}");
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media (hover: none){
+    .prev:active,.next:active {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    .scroll-button:active{
+        background-color: #008c98;
+    }
+}
+
+@media (hover: hover) {
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    .scroll-button:hover {
+        background-color: #008c98;
+    }
 }
 
 @media (max-width: 768px) {
@@ -727,32 +841,10 @@ header {
         flex-wrap: nowrap;
     }
 
-    .banner-text h2 {
-        font-size: 18px;
-    }
 
-    .banner-text p {
-        font-size: 16px;
-    }
 
-    .slide-text h2 {
-        font-size: 20px;
-        margin: 0 0 20px 0;
-    }
 
-    .slide-title {
-        font-size: 20px;
-        margin: 0 0 20px 0;
-    }
 
-    .slide {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .slide-img {
-        height: 25vh;
-    }
 
     .page-img {
         width: 300px; /* Ширина изображения */
@@ -781,7 +873,121 @@ header {
 
 /* Breakpoints for specific devices */
 /* Smartphones */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+    .header__address, .header__right, .header__phone {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header__nav ul.active {
+        display: flex;
+    }
+
+    .header__center, .header__right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__top {
+        flex-direction: column;
+    }
+
+    .banner-text h3 {
+        font-size: 16px;
+    }
+    .banner-text p {
+        font-size: 12px;
+    }
+    .banner-text button {
+        font-size:12px;
+    }
+    .banner-text ul {
+        font-size: 12px;
+    }
+    .slide h2 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .slide-title h2 {
+        font-size: 16px;
+        margin: 0 0 10px 0;
+    }
+    #magazine .slide-title h2 {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    .slide-title {
+        padding-bottom: 15px;
+    }
+    .slide-text p {
+        font-size: 10px;
+    }
+
+
+
+        .slide-text ul{
+        font-size: 12px;
+    }
+    .banner-text h2 {
+        font-size: 18px;
+    }
+
+
+    .page-img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .page-text {
+        width: 50%;
+        padding: 10%;
+    }
+    .page-link {
+        font-size: 12px;
+    }
+    #magazine .page-link {
+        font-size: 11px;
+    }
+
+
+    .prev, .next {
+        font-size: 24px;
+    }
+
+    .page-text h2 {
+        font-size: 18px;
+    }
+
+    .footer__columns {
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-container input, .form-container textarea {
+        font-size: 12px;
+    }
+
+    .form-container button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .form-footer {
+        font-size: 6px;
+    }
+    .map {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
     .header__address, .header__right, .header__phone {
         display: none;
     }
@@ -806,30 +1012,62 @@ header {
     .banner-text h2 {
         font-size: 18px;
     }
-
-    .banner-text p {
+    .banner-text h3 {
         font-size: 16px;
     }
-
+    .banner-text ul {
+        font-size: 14px;
+    }
+    .banner-text p {
+        font-size: 12px;
+    }
+    .banner-text button {
+        font-size: 12px;
+    }
     .slide-text h2 {
-        font-size: 20px;
-        margin: 0 0 20px 0;
+        font-size: 16px;
+        margin: 0 0 10px 0;
     }
+    .slide-title h2 {
+        font-size: 21px;
+        margin: 0 0 10px 0;
+    }
+    #magazine .slide-title h2 {
+        font-size: 18px;
+    }
+    .slide-text p {
+        font-size: 10px;
+    }
+
     .slide-title {
-        font-size: 20px;
-        margin: 0 0 20px 0;
+        padding-bottom: 15px;
     }
 
-    .slide {
-        flex-direction: column;
-        justify-content: flex-start;
+    .slide-text ul{
+        font-size: 14px;
+    }
+    .banner-text h2 {
+        font-size: 18px;
     }
 
-    .slide-img {
-        width: 70%;
-        height: 25vh;
+
+    .page-img {
+        width: 300px;
+        height: 250px;
     }
 
+    .page-text {}
+    .slide-text p {
+        font-size: 10px;
+    }
+
+        .slide-title {
+        padding-bottom: 15px;
+    }
+
+    .slide-text ul{
+        font-size: 14px;
+    }
     .page-img {
         width: 300px;
         height: 250px;
@@ -875,6 +1113,10 @@ header {
 
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
+    .slide-text ul {
+        font-size: 16px;
+    }
+
     .form-container {
         padding: 15px;
     }
@@ -898,6 +1140,33 @@ header {
     .header__center {
         flex-direction: column;
     }
+    .banner-text h2 {
+        font-size: 18px;
+    }
+
+    .banner-text h3 {
+        font-size: 16px;
+    }
+    .banner-text ul {
+        font-size: 14px;
+    }
+    .banner-text p {
+        font-size: 12px;
+    }
+    .banner-text button {
+        font-size: 12px;
+    }
+
+    .slide-text h2 {
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    .slide-title h2 {
+        font-size: 24px;
+    }
+
+
+
 }
 
 /* Netbooks */
@@ -905,7 +1174,9 @@ header {
     .header__top, .header__right {
         display: none;
     }
-
+    #magazine .slide-title h2 {
+        font-size: 26px;
+    }
 
 .header__center {
     flex: 0 0 75%;
@@ -939,16 +1210,11 @@ header {
         font-size: 36px;
     }
 
-    .banner-text p {
+    .banner-text h3 {
         font-size: 24px;
     }
-
-    .slide-text h2 {
-        font-size: 30px;
-    }
-    .slide-title {
-        font-size: 30px;
-
+    .banner-text ul {
+        font-size: 18px;
     }
 
     .slide {
@@ -991,21 +1257,10 @@ header {
         flex-direction: row;
     }
 
-    .banner-text h2 {
-        font-size: 48px;
-    }
-
-    .banner-text p {
+    .slide-title h2 {
         font-size: 36px;
     }
 
-    .slide-text h2 {
-        font-size: 36px;
-    }
-    .slide-title {
-        font-size: 36px;
-
-    }
 
     .slide {
         flex-direction: row;
@@ -1035,6 +1290,42 @@ header {
     .slide {
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 100px
+    }
+        .page-link {
+        padding: 10px 10px;
+    }
+        .banner-text {
+        padding: 25px 0 25px 25px;
+        width: 75%;
+        transform: translate(-66%, 0%);
+    }
+        .slide-text {
+        width: 75%;
+    }
+    .slide-text p {
+        padding: 0 0 0 35px;
+    }
+    .slide-img {
+        max-height: 25vh;
+        max-width: none;
+    }
+    .slide-text {
+        padding:10px;
+    }
+        .slide-text ul{
+        line-height: 1.4;
+    }
+        .slide-title {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+        .dots-container {
+                padding: 5px 0;
+    }
+    .dot {
+        height:10px;
+        width:10px;
     }
     .header__nav ul {
         display: none;
@@ -1043,6 +1334,9 @@ header {
     }
     .page-logo {
         display: none;
+    }
+    .modal-content {
+        margin: 50% auto;
     }
 }
 
@@ -1053,19 +1347,14 @@ header {
     }
     .slide {
         flex-direction: row;
+        font-size: 0.9em
     }
         .page-logo {
         display: none;
     }
-        .slide {
-            font-size: 0.9em
-        }
         header{
             box-shadow: 0 30px 30px 30px rgb(0 0 0 / 30%);
         }
-    .form-container {
-        padding: 10px;
-    }
     .form-container input, .form-container textarea {
         margin-bottom: 5px;
         padding: 5px;
@@ -1073,7 +1362,6 @@ header {
         border-radius: 3px;}
     .dots-container{
         padding: 5px 0;
-        bottom: 5px;
     }
     .form-container h2 {
         margin:5px;
@@ -1082,9 +1370,6 @@ header {
         font-size: 0.9em;
         margin: 5px;
 
-    }
-    .slife img {
-        height: 50vh;
     }
 
 }
